@@ -226,21 +226,12 @@ html {
   overflow: hidden;
 }
 
-h1 {
-  margin: 250px;
-  font-size: 240px;
-  text-align: center;
-}
-
-h2 {
-  font-size: 50px;
-  text-align: center;
-  padding: 100px 0px;
-}
-
-html {
-  background-image: url(../assets/cat-bg.JPG);
-  background-position: center;
-  background-size: contain;
-  background-repeat: repeat;
+/* all text and btm section bg*/
+/* button bg and nav hover */
+/* button text color */
+/* top section bg */
+/* recurring accent */
+/* dynamic bg shape top right of home section */
+body {
+  background-color: #9BD3CC;
 }
