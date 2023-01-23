@@ -1,0 +1,17 @@
+@use "variables" as *;
+
+.container {
+  padding: 0px 20px;
+  display: flex;
+}
+
+.navbarLinks {
+  display: flex;
+}
+
+.logo {
+  display: flex;
+  img {
+    height: 60px;
+  }
+}

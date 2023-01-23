@@ -1,0 +1,7 @@
+@use "variables" as *;
+
+header {
+  background-color: $quaternary;
+  position: fixed;
+  width: 100%;
+}

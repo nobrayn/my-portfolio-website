@@ -1,0 +1,175 @@
+@use "./variables" as *;
+
+html {
+  /* setting root element to 62.5% makes 1rem = 10px */
+  font-size: 62.5%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li
+a,
+p,
+button {
+  font-family: $siteFont;
+  color: $primary
+}
+
+h1 {
+  font-size: 7rem;
+  font-weight: 600;
+  line-height: 70px;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 4rem;
+  line-height: 48px;
+}
+
+.services h2 {
+  font-weight: 600;
+  font-size: 5rem;
+  line-height: 60px;
+  letter-spacing: 4px
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 3.2rem;
+  line-height: 38.4px;
+}
+
+.aboutBtnFlex h4 {
+  font-weight: 600;
+  font-size: 2.6rem;
+  line-height: 31.2px;
+  color: $secondary
+}
+
+.boxHeaders h4 {
+  font-weight: 600;
+  font-size: 2.4rem;
+  line-height: 28.8px
+}
+
+.contactOptionsRight h4 {
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 16.8px;
+  letter-spacing: 2px
+}
+
+h5 {
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 19.2px;
+}
+
+.testimonialBoxRight h5 {
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 19.2px
+}
+
+.contactLeftFlex h5 {
+  font-weight: 600;
+  font-size: 3.2rem;
+  line-height: 38.4px
+}
+
+h6 {
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 19.2px;
+  letter-spacing: 3px
+}
+
+.homeText p {
+font-weight: 400;
+font-size: 2rem;
+line-height: 30px;
+}
+
+.aboutText p {
+font-weight: 400;
+font-size: 1.8rem;
+line-height: 27px
+}
+
+.svcBox p {
+font-weight: 400;
+font-size: 1.7rem;
+line-height: 25.5px
+}
+
+.portfolioText p {
+font-weight: 400;
+font-size: 1.6rem;
+line-height: 24px
+}
+
+.testimonialBox p {
+font-weight: 400;
+font-size: 1.7rem;
+line-height: 25.5px
+}
+
+.contactFlex p {
+font-weight: 500;
+font-size: 2rem;
+line-height: 30px
+}
+
+footer p {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 24px;
+  color: $septenary
+}
+
+ul {
+  list-style: none;
+}
+
+label,
+input,
+textarea {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 24px
+}
+
+.navbarLinks a {
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 35px;
+  letter-spacing: 3px;
+  text-decoration: none;
+  text-transform: uppercase
+}
+
+.contactBtn,
+.aboutBtn,
+.portfolioBtn,
+.viewProjectBtn {
+  color: $tertiary;
+  background-color: $secondary;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 21px;
+  letter-spacing: 2px;
+  height: 30px; // no
+  text-align: center;
+  a {
+    font-family: $siteFont;
+    color: $tertiary;
+    text-decoration: none;
+    text-transform: uppercase
+  }
+}
