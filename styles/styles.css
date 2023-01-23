@@ -409,6 +409,11 @@ textarea {
   text-transform: uppercase;
 }
 
+main {
+  background-color: #FFF9EC;
+  padding-top: 250px;
+}
+
 .container {
   max-width: 1230px;
   width: 100%;
@@ -441,8 +446,4 @@ header {
   background-color: #FFF9EC;
   position: fixed;
   width: 100%;
-}
-
-main {
-  background-color: #FFF9EC;
 }
