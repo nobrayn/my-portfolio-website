@@ -2,12 +2,16 @@
 
 main {
   background-color: $quaternary;
-    padding-top: 250px;
+  padding-top: 250px;
 }
 
 .container {
   max-width: 1230px;
-  width: 100%;
+  width: 98%;
   margin: 0 auto;
 }
 
+.wrapper {
+  position: static;
+  z-index: 1;
+}

@@ -1,5 +1,31 @@
 @use "variables" as *;
 
+// fill vh minus padding-top added to main
 .home {
-  // margin-bottom: 150px;
+  min-height: calc(100vh - 250px);
+}
+
+.homeFlex {
+  display: flex;
+  justify-content: space-between;
+}
+
+// abstract shape in background
+// must fix so it doesn't cause horizontal scroll..!
+.home::after {
+	background: rgba(254, 196, 72, .4);
+	border-radius: 50px;
+	bottom: 47%;
+	content: "";
+	left: 48%;
+	position: absolute;
+  z-index: 1;
+	right: -16%;
+	top: -19%;
+	transform: rotate(-45deg);
+}
+
+.homeImage img { // fix this idiot from scrolling over the nav bar
+	position: relative;
+	z-index: 10;
 }

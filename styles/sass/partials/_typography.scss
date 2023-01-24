@@ -30,6 +30,7 @@ h2 {
   font-weight: 600;
   font-size: 4rem;
   line-height: 48px;
+  text-transform: uppercase;
 }
 
 .services h2 {
@@ -58,6 +59,10 @@ h3 {
   line-height: 28.8px
 }
 
+.servicesFlex h4 {
+  font-size: 2.4rem;
+  margin-bottom: 0px;
+}
 .contactOptionsRight h4 {
   font-weight: 400;
   font-size: 1.4rem;
@@ -105,7 +110,8 @@ line-height: 27px
 .svcBox p {
 font-weight: 400;
 font-size: 1.7rem;
-line-height: 25.5px
+line-height: 25.5px;
+margin-bottom: 0px;
 }
 
 .portfolioText p {
@@ -154,22 +160,23 @@ textarea {
   text-transform: uppercase
 }
 
-.contactBtn,
-.aboutBtn,
-.portfolioBtn,
-.viewProjectBtn {
+.btn {
   color: $tertiary;
   background-color: $secondary;
   font-size: 1.4rem;
   font-weight: 500;
   line-height: 21px;
   letter-spacing: 2px;
-  height: 30px; // no
+  height: fit-content;
   text-align: center;
+  width: fit-content;
+  padding: 8px 16px;
+    box-shadow: 0.5rem 0.5rem $primary;
   a {
     font-family: $siteFont;
     color: $tertiary;
     text-decoration: none;
     text-transform: uppercase
   }
+
 }
