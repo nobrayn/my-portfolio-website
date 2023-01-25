@@ -28,9 +28,11 @@ h1 {
 
 h2 {
   font-weight: 600;
-  font-size: 4rem;
+  font-size: 5rem;
   line-height: 48px;
   text-transform: uppercase;
+  text-align: center;
+
 }
 
 .services h2 {
@@ -95,6 +97,10 @@ h6 {
   letter-spacing: 3px
 }
 
+p {
+  display: inline-block;
+}
+
 .homeText p {
 font-weight: 400;
 font-size: 2rem;
@@ -115,9 +121,11 @@ margin-bottom: 0px;
 }
 
 .portfolioText p {
-font-weight: 400;
-font-size: 1.6rem;
-line-height: 24px
+font-weight: 500;
+font-size: 1.3rem;
+line-height: 24px;
+letter-spacing: 3px;
+text-transform: uppercase;
 }
 
 .testimonialBox p {
@@ -179,4 +187,9 @@ textarea {
     text-transform: uppercase
   }
 
+}
+
+.fa-brands,
+.fab {
+  font-size: 5rem;
 }

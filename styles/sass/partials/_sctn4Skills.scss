@@ -1,5 +1,12 @@
 @use "variables" as *;
 
+.skills {
+  padding-bottom: 25px;
+  h2 {
+    padding-top: 80px;
+  }
+}
+
 .skillsFlex {
   display: flex;
 }
@@ -17,5 +24,4 @@
 
 .iconBoxLeft {
   border: 2px solid black;
-
 }

@@ -2,14 +2,18 @@
 
 .services {
   background-image: url("../assets/images/effect/bg-effect-1.png");
+  padding-bottom: 25px;
   h2 {
+    padding-top: 80px;
     text-align: center;
+    margin-top: 0px;
   }
 }
 
+// fix this or something
 .servicesFlex {
   height: 600px;
-  max-width: fit-content;
+  max-width: 96%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -28,11 +32,36 @@
   justify-content: center;
   align-items: center;
   margin-left: 20px;
-
+  border: 2px solid black;
+  width: 40px;
+  height: 40px;
+  align-self: center;
+  padding: 30px;
+  background: white;
   img {
-    border: 1px solid black;
+    width: 100%;
+    height: 100%;
+    padding: -40px;
+    border: 1px solid red;
   }
 }
+
+.svcBoxFirebase {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20px;
+  border: 2px solid black;
+  width: 63px;
+  height: 63px;
+  align-self: center;
+  background: white;
+  img {
+    height: 100%;
+    padding: 10px;
+  }
+}
+
 
 .svcBoxRight {
 margin-left: 20px;

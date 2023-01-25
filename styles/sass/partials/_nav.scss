@@ -1,5 +1,9 @@
 @use "variables" as *;
 
+header {
+  z-index: 10;
+}
+
 .navContainer {
   padding: 15px 0px 10px 0px;
   display: flex;

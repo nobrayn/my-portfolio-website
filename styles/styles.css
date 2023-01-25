@@ -233,6 +233,7 @@ html {
 /* recurring accent */
 /* dynamic bg shape top right of home section */
 /* footer text and icons */
+/* bg color for "project type" tags in portfolio section */
 html {
   /* setting root element to 62.5% makes 1rem = 10px */
   font-size: 62.5%;
@@ -260,9 +261,10 @@ h1 {
 
 h2 {
   font-weight: 600;
-  font-size: 4rem;
+  font-size: 5rem;
   line-height: 48px;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .services h2 {
@@ -328,6 +330,10 @@ h6 {
   letter-spacing: 3px;
 }
 
+p {
+  display: inline-block;
+}
+
 .homeText p {
   font-weight: 400;
   font-size: 2rem;
@@ -348,9 +354,11 @@ h6 {
 }
 
 .portfolioText p {
-  font-weight: 400;
-  font-size: 1.6rem;
+  font-weight: 500;
+  font-size: 1.3rem;
   line-height: 24px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
 }
 
 .testimonialBox p {
@@ -418,9 +426,9 @@ textarea {
   text-transform: uppercase;
 }
 
-main {
-  background-color: #FFF9EC;
-  padding-top: 250px;
+.fa-brands,
+.fab {
+  font-size: 5rem;
 }
 
 .container {
@@ -432,6 +440,10 @@ main {
 .wrapper {
   position: static;
   z-index: 1;
+}
+
+header {
+  z-index: 10;
 }
 
 .navContainer {
@@ -508,7 +520,10 @@ header {
 }
 
 .home {
-  min-height: calc(100vh - 250px);
+  min-height: 100vh;
+  padding-top: 250px;
+  background-image: url("../assets/images/effect/bg-effect-4.png");
+  background-size: cover;
 }
 
 .homeFlex {
@@ -520,28 +535,14 @@ header {
           justify-content: space-between;
 }
 
-.home::after {
-  background: rgba(254, 196, 72, 0.4);
-  border-radius: 50px;
-  bottom: 47%;
-  content: "";
-  left: 48%;
-  position: absolute;
-  z-index: 1;
-  right: -16%;
-  top: -19%;
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-}
-
 .homeImage img {
   position: relative;
-  z-index: 10;
+  z-index: 5;
 }
 
 .about {
   background-color: #FFFFFF;
-  padding: 100px 0px;
+  padding: 100px 0px 20px 0px;
 }
 
 .aboutFlex {
@@ -595,16 +596,17 @@ header {
 
 .services {
   background-image: url("../assets/images/effect/bg-effect-1.png");
+  padding-bottom: 25px;
 }
 .services h2 {
+  padding-top: 80px;
   text-align: center;
+  margin-top: 0px;
 }
 
 .servicesFlex {
   height: 600px;
-  max-width: -webkit-fit-content;
-  max-width: -moz-fit-content;
-  max-width: fit-content;
+  max-width: 96%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -639,9 +641,42 @@ header {
       -ms-flex-align: center;
           align-items: center;
   margin-left: 20px;
+  border: 2px solid black;
+  width: 40px;
+  height: 40px;
+  -ms-flex-item-align: center;
+      align-self: center;
+  padding: 30px;
+  background: white;
 }
 .svcBoxLeft img {
-  border: 1px solid black;
+  width: 100%;
+  height: 100%;
+  padding: -40px;
+  border: 1px solid red;
+}
+
+.svcBoxFirebase {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 20px;
+  border: 2px solid black;
+  width: 63px;
+  height: 63px;
+  -ms-flex-item-align: center;
+      align-self: center;
+  background: white;
+}
+.svcBoxFirebase img {
+  height: 100%;
+  padding: 10px;
 }
 
 .svcBoxRight {
@@ -672,6 +707,13 @@ header {
   background-color: #CEC5FF;
 }
 
+.skills {
+  padding-bottom: 25px;
+}
+.skills h2 {
+  padding-top: 80px;
+}
+
 .skillsFlex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -699,4 +741,96 @@ header {
 
 .iconBoxLeft {
   border: 2px solid black;
+}
+
+.portfolio {
+  background-color: white;
+}
+
+.portfolio {
+  padding-bottom: 25px;
+}
+.portfolio h2 {
+  padding-top: 80px;
+  margin-top: 0px;
+}
+
+.portfolioRowA,
+.portfolioRowB {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 20px;
+}
+
+.portfolioImage {
+  max-width: 50%;
+  padding: 10px 4%;
+}
+.portfolioImage img {
+  max-height: 100%;
+  max-width: 100%;
+  border: 2px solid black;
+}
+
+.portfolioTextFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.portfolioTextFlex p {
+  margin-right: 15px;
+}
+
+.portfolioText {
+  padding: 10px 4%;
+  max-width: 50%;
+}
+.portfolioText h3 {
+  margin: 20px 0px 0px 0px;
+}
+
+.keyword {
+  background-color: #FFDBC1;
+  padding: 4px 20px;
+  border-radius: 20px;
+  margin-bottom: 0px;
+}
+
+.testimonials {
+  background-image: url("../assets/images/effect/bg-effect-2.png");
+  background-size: cover;
+  padding-bottom: 25px;
+}
+.testimonials h2 {
+  padding-top: 80px;
+  margin-top: 0px;
+}
+
+.testimonialsFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.testimonialBox {
+  border: 2px solid black;
+  background-color: white;
+  margin: 30px;
+  padding: 20px 40px;
 }

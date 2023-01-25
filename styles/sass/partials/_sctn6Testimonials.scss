@@ -1,0 +1,22 @@
+@use "variables" as *;
+
+.testimonials {
+  background-image: url("../assets/images/effect/bg-effect-2.png");
+  background-size: cover;
+  padding-bottom: 25px;
+  h2 {
+    padding-top: 80px;
+    margin-top: 0px;
+  }
+}
+
+.testimonialsFlex {
+  display: flex;
+}
+
+.testimonialBox {
+  border: 2px solid black;
+  background-color: white;
+  margin: 30px;
+  padding: 20px 40px;
+}
