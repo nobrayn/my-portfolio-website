@@ -1,0 +1,16 @@
+@use "variables" as *;
+
+.container {
+  max-width: 1230px;
+  width: 98%;
+  margin: 0 auto;
+}
+
+.wrapper {
+  position: static;
+  z-index: 1;
+}
+
+html {
+  scroll-behavior: smooth;
+}

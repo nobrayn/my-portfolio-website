@@ -1,0 +1,220 @@
+@use "./variables" as *;
+
+html {
+  /* setting root element to 62.5% makes 1rem = 10px */
+  font-size: 62.5%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li
+a,
+p,
+button,
+label,
+input {
+  font-family: $siteFont;
+  color: $primary
+}
+
+h1 {
+  font-size: 7rem;
+  font-weight: 600;
+  line-height: 70px;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 5rem;
+  line-height: 48px;
+  text-transform: uppercase;
+  text-align: center;
+
+}
+
+.services h2 {
+  font-weight: 600;
+  font-size: 5rem;
+  line-height: 60px;
+  letter-spacing: 4px
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 3.2rem;
+  line-height: 38.4px;
+}
+
+.aboutBtnFlex h4 {
+  font-weight: 600;
+  font-size: 2.6rem;
+  line-height: 31.2px;
+  color: $secondary
+}
+
+.boxHeaders h4 {
+  font-weight: 600;
+  font-size: 2.4rem;
+  line-height: 28.8px
+}
+
+.servicesFlex h4 {
+  font-size: 2.4rem;
+}
+.contactOptionsRight h4 {
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 16.8px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 100;
+  color: #ffffffbf;
+}
+
+h5 {
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 19.2px;
+}
+
+.testimonialBoxRight h5 {
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 19.2px
+}
+
+.contactLeftFlex h5 {
+  font-weight: 600;
+  font-size: 3.2rem;
+  line-height: 38.4px
+}
+
+h6 {
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 19.2px;
+  letter-spacing: 3px
+}
+
+p {
+  display: inline-block;
+}
+
+.homeText p {
+font-weight: 400;
+font-size: 2rem;
+line-height: 30px;
+}
+
+.aboutText p {
+font-weight: 400;
+font-size: 1.8rem;
+line-height: 27px
+}
+
+.svcBox p {
+font-weight: 400;
+font-size: 1.7rem;
+line-height: 25.5px;
+}
+
+.portfolioText p {
+font-weight: 500;
+font-size: 1.3rem;
+line-height: 24px;
+letter-spacing: 3px;
+}
+
+.keyword {
+  text-transform: uppercase;
+}
+
+.testimonialBox p {
+font-weight: 400;
+font-size: 1.7rem;
+line-height: 25.5px
+}
+
+.contactFlex p {
+font-weight: 500;
+font-size: 2rem;
+line-height: 30px
+}
+
+footer p {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 24px;
+  color: $septenary
+}
+
+ul {
+  list-style: none;
+}
+
+label,
+input,
+textarea {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 24px;
+  color: $nonary;
+}
+
+.navbarLinks a {
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 35px;
+  letter-spacing: 3px;
+  text-decoration: none;
+  text-transform: uppercase
+}
+
+.btn {
+  color: $tertiary;
+  background-color: $secondary;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 21px;
+  letter-spacing: 2px;
+  height: fit-content;
+  text-align: center;
+  width: fit-content;
+  padding: 8px 16px;
+    box-shadow: 0.5rem 0.5rem $primary;
+  a {
+    font-family: $siteFont;
+    color: $tertiary;
+    text-decoration: none;
+    text-transform: uppercase
+  }
+}
+
+button {
+  text-decoration: none;
+  text-transform: uppercase;
+  border: none;
+  color: $primary;
+  background-color: $denary;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 21px;
+  letter-spacing: 2px;
+  height: fit-content;
+  text-align: center;
+  width: fit-content;
+  padding: 8px 16px;
+  box-shadow: 0.5rem 0.5rem $secondary;
+}
+
+
+
+.fa-brands,
+.fab {
+  font-size: 5rem;
+}

@@ -4,15 +4,316 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="./styles/styles.css">
-	<title>Starting Point</title>
+	<script src="https://kit.fontawesome.com/f3e33d9ac3.js" crossorigin="anonymous"></script>
+	<title>Chris O'Bray Web Development Portfolio</title>
 </head>
 <body>
 	<header>
-		<h1>🚫🧠</h1>
+		<nav class="navbar">
+			<div class="container navContainer">
+				<div class="logo">
+					<a href="https://nobrayn.omg.lol/" target="_blank"><img src="./assets/images/n-logo/n-logo-default.png" alt="nobrayn logo image"></a>
+					<a href="https://nobrayn.omg.lol/" target="_blank"><p>o<span>brayn</span></p></a>
+				</div> <!-- end of logo -->
+				<div class="navLinks">
+					<ul class="navbarLinks">
+						<li><a href="#home">home</a></li>
+						<li><a href="#services">services</a></li>
+						<li><a href="#portfolio">portfolio</a></li>
+						<li><a href="#testimonials">testimonials</a></li>
+						<li><a href="#contact">contact</a></li>
+					</ul> <!-- end of navbarLinks -->
+				</div> <!-- end of navLinks -->
+				<div class="contactBtn btn">
+					<a href="#contact">contact now</a>
+				</div> <!-- end of contactBtn btn -->
+			</div> <!-- end of container -->
+		</nav> <!-- end of navbar -->
 	</header>
-	<section>
-		<h2>I can do better. Just wait.</h2>
-	</section>
+	<main class="wrapper">
+		<section class="home" id="home">
+			<div class="container">
+				<div class="homeFlex">
+					<div class="homeText">
+						<h6>Hey! 👋, I'm Chris! </h6>
+						<h1>I'm a web developer.</h1>
+						<p>based in Toronto, Canada.</p>
+						<div class="aboutBtn btn">
+							<a href="#about">let's go!</a>
+						</div> <!-- end of contactBtn btn -->
+					</div> <!-- end of homeText -->
+					<div class="homeImage">
+						<img src="./assets/images/home-banner.png" alt="two profile images of Chris O'Bray with colourful borders and backgrounds">
+					</div> <!-- end of homeImage -->
+				</div> <!-- end of homeFlex -->
+			</div> <!-- end of container -->
+		</section> <!-- end of home -->
+
+		<section class="about" id="about">
+			<div class="container">
+				<div class="aboutFlex">
+					<div class="aboutImage">
+						<img src="http://placekitten.com/375/375" alt="placeholder">
+					</div> <!-- end of aboutImage -->
+					<div class="aboutText">
+						<h3>I'm a front-end developer with a sprinkling of experience.</h3>
+						<p>I code fun, functional and memorable websites from the ground up! I'm a proud graduate of Juno College's Web Development bootcamp and have recently kerplammed my way into the market! (woof)</p>
+						<div class="aboutBtnFlex">
+							<div class="aboutBtnFlexLeft">
+								<h4>5</h4>
+								<p>The above is a number</p>
+								<div class="contactBtn btn">
+									<a href="#contact">contact me</a>
+								</div> <!-- end of contactBtn btn -->
+							</div> <!-- end of aboutBtnFlexLeft -->
+							<div class="aboutBtnFlexRight">
+								<h4>56</h4>
+								<p>The above is also a number</p>
+								<div class="portfolioBtn btn">
+									<a href="#portfolio">portfolio</a>
+								</div> <!-- end of portfolioBtn btn -->
+							</div> <!-- end of aboutBtnFlexRight -->
+						</div> <!-- end of aboutBtnFlex -->
+					</div> <!-- end of aboutText -->
+				</div> <!-- end of aboutFlex -->
+			</div> <!-- end of container -->
+		</section>
+
+		<section class="services" id="services">
+			<div class="container">
+				<h2>my services</h2>
+				<div class="servicesFlex">
+					<div class="svcBox svcBoxOne">
+						<div class="svcBoxLeft">
+							<i class="fa-brands fa-html5"></i>
+						</div>
+						<div class="svcBoxRight">
+							<h4 class="boxHeaders">HTML</h4>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus excepturi nam consectetur accusamus dolore corporis est magni libero!</p>
+						</div> <!-- end of svcBoxRight -->
+					</div> <!-- end of svcBox svcBoxOne -->
+
+					<div class="svcBox svcBoxTwo">
+						<div class="svcBoxLeft">
+							<i class="fa-brands fa-css3"></i>
+						</div> <!-- end of svcBoxLeft -->
+
+						<div class="svcBoxRight">
+							<h4>CSS</h4>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, veritatis soluta eius vero nobis aspernatur iure pariatur.</p>
+						</div> <!-- end of svcBoxRight -->
+					</div> <!-- end of svcBox svcBoxTwo -->
+
+					<div class="svcBox svcBoxThree">
+						<div class="svcBoxLeft">
+							<i class="fa-brands fa-square-js"></i>
+						</div> <!-- end of svcBox svcBoxThree -->
+
+						<div class="svcBoxRight">
+							<h4>JavaScript</h4>
+							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui laboriosam soluta ea blanditiis illo eius quis doloremque voluptas error.</p>
+						</div> <!-- end of svcBoxRight -->
+					</div> <!-- end of svcBox svcBoxThree -->
+
+					<div class="svcBox svcBoxFour">
+						<div class="svcBoxLeft">
+							<i class="fa-brands fa-react"></i>
+						</div> <!-- end of svcBoxLeft -->
+
+						<div class="svcBoxRight">
+							<h4>React JS</h4>
+							<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam quas officia perferendis! Deleniti, porro ad!</p>
+						</div> <!-- end of svcBoxRight -->
+					</div> <!-- end of svcBox svcBoxFour -->
+
+					<div class="svcBox svcBoxFive">
+						<div class="svcBoxFirebase">
+							<img src="./assets/images/firebase-logo.svg">
+						</div> <!-- end of svcBoxLeft -->
+
+						<div class="svcBoxRight">
+							<h4>Firebase</h4>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam provident architecto nemo. Cumque placeat dignissimos iusto vitae!</p>
+						</div> <!-- end of svcBoxRight -->
+					</div> <!-- end of svcBox svcBoxFive -->
+
+					<div class="svcBox svcBoxSix">
+						<div class="svcBoxLeft">
+							<i class="fa-brands fa-git"></i>
+						</div> <!-- end of svcBoxLeft -->
+
+						<div class="svcBoxRight">
+							<h4>Git</h4>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, id error. Unde libero exercitationem incidunt expedita!</p>
+						</div> <!-- end of svcBoxRight -->
+					</div> <!-- end of svcBox svcBoxSix -->
+				</div> <!-- end of servicesFlex -->
+			</div> <!-- end of container -->
+		</section> <!-- end of services -->
+
+
+		<section class="portfolio" id="portfolio">
+			<div class="container">
+				<h2>latest projects</h2>
+				<!-- can repeat this for more projects -->
+				<div class="portfolioRowA">
+					<div class="portfolioImage box1">
+						<img src="./assets/images/project-1.jpg" alt="screenshot of Wits and Clicks site">
+					</div> <!-- end of portfolioImage box1 -->
+
+					<div class="portfolioText box2">
+						<div class="portfolioTextFlex">
+							<div class="keywordBox">
+								<p class="keyword">vanilla JS</p>
+								<p class="keyword">API</p>
+							</div> <!-- end of keywordBox-->
+
+							<h3>A Battle of Wits and Clicks</h3>
+							<p>Using two API's, one good and one evil, choose to give advice or insult the other player!</p>
+							<div class="viewProjectBtn btn">
+								<a href="#">view project</a>
+							</div> <!-- end of viewProjectBtn btn -->
+						</div> <!-- end of portfolioTextFlex -->
+					</div> <!-- end of portfolioText box2 -->
+				</div> <!-- end of portfolioRowA-->
+
+				<div class="portfolioRowB">
+					<div class="portfolioText box3">
+						<div class="portfolioTextFlex">
+							<div class="keywordBox">
+								<p class="keyword">web design</p>
+							</div> <!-- end of keywordBox-->
+							<h3>Another Rad Project</h3>
+							<p>I did some excellent work here. You really should see it!</p>
+							<div class="viewProjectBtn btn">
+								<a href="#">view project</a>
+							</div> <!-- end of viewProjectBtn btn -->
+						</div> <!-- end of portfolioTextFlex -->
+					</div> <!-- end of portfolioText box3 -->
+
+					<div class="portfolioImage box4">
+						<img src="./assets/images/project-2.png" alt="screenshot of a photography website called captured">
+					</div> <!-- end of portfolioImage box4 -->
+				</div> <!-- end of portfolioRowB -->
+			</div> <!-- end of container-->
+		</section> <!-- end of portfolio -->
+
+		<section class="testimonials" id="testimonials">
+			<div class="container">
+				<h2>testimonials</h2>
+				<!-- stretch goal - allow user to click left/right for more boxes to slide in -->
+				<div class="testimonialsFlex">
+					<div class="testimonialBox testimonialOne">
+						<div class="testimonialBoxLeft">
+							<a href="https://tiffany.omg.lol/" target="_blank"><img src="./assets/images/testimonial-pics/tiffany-regaudie.jpeg" alt="profile picture of Tiffany Regaudie"></a>
+						</div>
+						<div class="testimonialBoxRight">
+							<p>This guy really knows his stuff. You should see what he can do with all these webbernet languages.</p>
+							<div>
+								<h5><a href="https://tiffany.omg.lol/"  target="_blank">Tiffany Regaudie</a></h5>
+								<span>Content writer/SEO lady</span>
+							</div>
+						</div> <!-- end of testimonialBoxRight -->
+					</div> <!-- end of testimonialBox testimonialOne -->
+
+					<div class="testimonialBox testimonialTwo">
+						<div class="testimonialBoxLeft">
+							<img src="./assets/images/testimonial-pics/horse.png" alt="placeholder">
+						</div>
+						<div class="testimonialBoxRight">
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque excepturi quidem itaque placeat debitis!</p>
+							<div>
+								<h5>Jorben Howfen</h5>
+								<span>Horse</span>
+							</div>
+						</div> <!-- end of testimonialBoxRight -->
+					</div> <!-- end of testimonialBox testimonialTwo -->
+				</div> <!-- end of testimonialsFlex -->
+			</div> <!-- end of container-->
+		</section> <!-- end of testimonials -->
+
+		<section class="contact" id="contact">
+			<div class="container">
+				<div class="contactFlex">
+					<div class="contactLeftFlex">
+						<h5>Get in touch</h5>
+						<p>Write me here, or find me anywhere as <a href="https://nobrayn.omg.lol/" target="_blank">nobrayn!</a></p>
+						<form id="contactForm" onsubmit="return false" action="#" method="post" name="contactForm">
+							<div class="formFlex">
+								<div class="formGroup formName">
+									<label for="firstName">First Name</label>
+									<input type="text" id="firstName" name="firstName" placeholder="Name">
+								</div> <!-- end of formGroup formName -->
+
+								<div class="formGroup formEmail">
+									<label for="contactEmailAddress">Email Address</label>
+									<input type="email" id="contactEmailAddress" name="contactEmailAddress" placeholder="Email">
+								</div> <!-- end of formGroup formEmail -->
+
+								<div class="formGroup formSubj">
+									<label for="subject">Subject</label>
+									<input type="text" id="subject" name="subject" placeholder="Subject">
+								</div> <!-- end of formGroup formSubj -->
+
+								<div class="formGroup formMsg">
+									<label for="message">Your message</label>
+									<textarea name="contactMessage" placeholder="Your Message..." id="contactMessage" ></textarea>
+								</div> <!-- end of formGroup formMsg -->
+								
+								<div class="formGroup formSend">
+									<button type="submit" value="contactSubmit">send message</button>
+								</div> <!-- end of formGroup formSend -->
+							</div> <!-- end of formFlex-->
+						</form> <!-- end of contactForm -->
+					</div> <!-- end of contactLeftFlex -->
+
+					<div class="contactRightFlex">
+						<div class="contactImage">
+							<img src="http://placekitten.com/450/316" alt="placeholder">
+						</div> <!-- end of contactImage -->
+
+						<div class="contactOptions">
+							<div class="contactOptionsLeft phone">
+								<i class="fa-solid fa-mobile-screen"></i>
+							</div> <!-- end of contactOptionsLeft -->
+							<div class="contactOptionsRight">
+								<h4>phone</h4>
+								<p>1-437-347-4636</p>
+							</div> <!-- end of contactOptionsRight -->
+						</div> <!-- end of contactOptions phone -->
+
+						<div class="contactOptions">
+							<div class="contactOptionsLeft mail">
+								<i class="fa-regular fa-envelope"></i>
+							</div> <!-- end of contactOptionsLeft -->
+							<div class="contactOptionsRight">
+								<h4>email</h4>
+								<p>nobrayn@gmail.com</p>
+							</div> <!-- end of contactOptionsRight -->
+						</div> <!-- end of contactOptions mail -->
+					</div> <!-- end of contactRightFlex -->
+				</div> <!-- end of contactFlex -->
+			</div> <!-- end of container-->
+		</section>
+
+		<footer>
+			<div class="container">
+				<div class="footerIcons">
+					<ul>
+						<li>
+							<a href="https://www.linkedin.com/in/nobrayn/"><i class="fa-brands fa-linkedin-in"></i></a></li>
+						<li><a href="https://github.com/nobrayn"><i class="fa-brands fa-github"></i></a></li>
+						<li><a href="http://twitter.com/chrisobray"><i class="fa-brands fa-twitter"></i></a></li>
+						<li><a href="https://soundcloud.com/nobrayn"><i class="fa-brands fa-soundcloud"></i></a></li>
+					</ul>
+					<p>© 2023 Chris O'Bray | all rights reserved</p>
+				</div> <!-- end of footerIcons-->
+			</div> <!-- end of container-->
+		</footer>
+	</main>
 </body>
 </html>

@@ -1,0 +1,55 @@
+@use "variables" as *;
+
+.portfolio {
+  background-color: white;
+}
+
+.portfolio {
+  padding-bottom: 25px;
+  h2 {
+    padding-top: 80px;
+    margin-top: 0px;
+  }
+}
+
+.portfolioRowA,
+.portfolioRowB {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.portfolioImage {
+  max-width: 50%;
+  padding: 10px 4%;
+  img {
+    max-height: 100%;
+    max-width: 100%;
+    border: 2px solid black;
+  }
+}
+
+.portfolioTextFlex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  p {
+    margin-right: 15px;
+  }
+}
+
+.portfolioText {
+  padding: 10px 4%;
+  max-width: 50%;
+  h3 {
+    margin: 20px 0px 0px 0px;
+  }
+}
+
+.keyword {
+  background-color: $octonary;
+  padding: 4px 20px;
+  border-radius: 20px;
+  margin-bottom: 0px;
+}

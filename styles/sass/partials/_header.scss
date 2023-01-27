@@ -1,0 +1,8 @@
+@use "variables" as *;
+
+header {
+  background-color: $quaternary;
+  position: fixed;
+  width: 100%;
+  filter: drop-shadow(0px 3px 6px #747474);
+}

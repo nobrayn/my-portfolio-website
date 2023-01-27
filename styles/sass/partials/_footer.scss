@@ -1,0 +1,26 @@
+@use "variables" as *;
+
+footer {
+  background-color: $primary;
+  color: $septenary;
+  border-top: 1px solid hsla(0, 0%, 100%, .1);
+}
+
+.footerIcons {
+  display: flex;
+  justify-content: space-between;
+  ul {
+    display: flex;
+    align-items: center;
+    padding: 0;
+  }
+  i {
+    color: white;
+    margin-right: 30px;
+    font-size: 2.5rem;
+    transition: 0.2s;
+  }
+  i:hover {
+    color: $secondary;
+  }
+}
