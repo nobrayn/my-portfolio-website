@@ -3,7 +3,7 @@
 // fill vh minus the 250px padding-top
 .home {
   min-height: calc(100vh);
-	padding-top: 250px;
+	padding-top: 125px;
 	background-image: url("../assets/images/effect/bg-effect-4.png");
 	background-size: cover;
 }
@@ -28,7 +28,16 @@
 // 	transform: rotate(-45deg);
 // }
 
-.homeImage img { 
+.homeText {
+	margin-left: 20px;
+	margin-top: 100px;
+	h1 {
+		margin-bottom: 20px;
+	}
+}
+
+.homeImage img {
+	width: 600px;
 	position: relative;
 	z-index: 5;
 }

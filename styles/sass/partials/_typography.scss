@@ -15,7 +15,9 @@ ul,
 li
 a,
 p,
-button {
+button,
+label,
+input {
   font-family: $siteFont;
   color: $primary
 }
@@ -63,13 +65,15 @@ h3 {
 
 .servicesFlex h4 {
   font-size: 2.4rem;
-  margin-bottom: 0px;
 }
 .contactOptionsRight h4 {
   font-weight: 400;
   font-size: 1.4rem;
   line-height: 16.8px;
-  letter-spacing: 2px
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 100;
+  color: #ffffffbf;
 }
 
 h5 {
@@ -92,7 +96,7 @@ h5 {
 
 h6 {
   font-weight: 600;
-  font-size: 1.6rem;
+  font-size: 2rem;
   line-height: 19.2px;
   letter-spacing: 3px
 }
@@ -117,7 +121,6 @@ line-height: 27px
 font-weight: 400;
 font-size: 1.7rem;
 line-height: 25.5px;
-margin-bottom: 0px;
 }
 
 .portfolioText p {
@@ -125,7 +128,10 @@ font-weight: 500;
 font-size: 1.3rem;
 line-height: 24px;
 letter-spacing: 3px;
-text-transform: uppercase;
+}
+
+.keyword {
+  text-transform: uppercase;
 }
 
 .testimonialBox p {
@@ -156,7 +162,8 @@ input,
 textarea {
   font-weight: 400;
   font-size: 1.6rem;
-  line-height: 24px
+  line-height: 24px;
+  color: $nonary;
 }
 
 .navbarLinks a {
@@ -186,8 +193,26 @@ textarea {
     text-decoration: none;
     text-transform: uppercase
   }
-
 }
+
+button {
+  text-decoration: none;
+  text-transform: uppercase;
+  border: none;
+  color: $primary;
+  background-color: $denary;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 21px;
+  letter-spacing: 2px;
+  height: fit-content;
+  text-align: center;
+  width: fit-content;
+  padding: 8px 16px;
+  box-shadow: 0.5rem 0.5rem $secondary;
+}
+
+
 
 .fa-brands,
 .fab {

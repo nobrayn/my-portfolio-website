@@ -12,19 +12,29 @@
 
 // fix this or something
 .servicesFlex {
-  height: 600px;
   max-width: 96%;
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
+  > div {
+  transition: 0.3s;
+  }
+  > div:hover {
+    box-shadow: 4px 4px 0 0 $primary;
+  }
+  h4 {
+    margin: 15px 0 0 0;
+  }
 }
 
 .svcBox {
   border: 2px solid black;
   margin: 10px 10px;
-  max-width: 50%;
+  max-width: calc(50% - 10px);
   display: flex;
-  flex: 1 1 0px;
+  flex: 1 1 40%;
+  p {
+    margin-bottom: 15px;
+  }
 }
 
 .svcBoxLeft {
@@ -42,7 +52,6 @@
     width: 100%;
     height: 100%;
     padding: -40px;
-    border: 1px solid red;
   }
 }
 
@@ -62,9 +71,14 @@
   }
 }
 
-
 .svcBoxRight {
-margin-left: 20px;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  p {
+    margin-right: 20px;
+  }
 }
 
 .svcBoxOne {

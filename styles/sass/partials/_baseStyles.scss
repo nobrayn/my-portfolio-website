@@ -1,9 +1,5 @@
 @use "variables" as *;
 
-// main {
-//   background-color: $quaternary;
-// }
-
 .container {
   max-width: 1230px;
   width: 98%;
@@ -13,4 +9,8 @@
 .wrapper {
   position: static;
   z-index: 1;
+}
+
+html {
+  scroll-behavior: smooth;
 }

@@ -1,8 +1,6 @@
 @use "variables" as *;
 
 .portfolio {
-  // background-image: url("../assets/images/effect/bg-effect-2.png");
-  // background-size: cover;
   background-color: white;
 }
 
@@ -22,12 +20,12 @@
   margin-top: 20px;
 }
 .portfolioImage {
-max-width: 50%;
-padding: 10px 4%;
-img {
-  max-height:100%;
-  max-width:100%;
-  border: 2px solid black;
+  max-width: 50%;
+  padding: 10px 4%;
+  img {
+    max-height: 100%;
+    max-width: 100%;
+    border: 2px solid black;
   }
 }
 
