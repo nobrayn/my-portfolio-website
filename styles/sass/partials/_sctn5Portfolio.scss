@@ -49,9 +49,38 @@
   }
 }
 
+.portfolioBtns {
+  display: flex;
+  justify-content: space-between;
+  a {
+    min-width: fit-content;
+    margin-right: 20px;
+  }
+}
+
 .keyword {
   background-color: $octonary;
-  padding: 4px 20px;
+  padding: 4px 15px;
   border-radius: 20px;
   margin-bottom: 0px;
+}
+
+.box1 img {
+  transition: transform .4s ease-in-out;
+  transform-style: preserve-3d;
+}
+
+.box1:hover img {
+  transform: rotate3d(.3, -.3, 0, 12deg);
+  transform: skew(1deg, .5deg);
+}
+
+.box4 img {
+  transition: transform .4s ease-in-out;
+  transform-style: preserve-3d;
+}
+
+.box4:hover img {
+  transform: rotate3d(-.3, -.3, 0, 12deg);
+  transform: skew(1deg, .5deg);
 }

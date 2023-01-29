@@ -9,34 +9,20 @@
 
 .homeFlex {
   display: flex;
+	align-items: center;
   justify-content: space-between;
 }
 
-// abstract shape in background
-// must fix so it doesn't cause horizontal scroll..!
-// .home::after {
-// 	background: rgba(254, 196, 72, .4);
-// 	border-radius: 50px;
-// 	bottom: 47%;
-// 	content: "";
-// 	left: 48%;
-// 	position: absolute;
-//   z-index: 1;
-// 	right: -16%;
-// 	top: -19%;
-// 	transform: rotate(-45deg);
-// }
-
 .homeText {
 	margin-left: 20px;
-	margin-top: 100px;
+	margin-top: 60px;
 	h1 {
 		margin-bottom: 20px;
 	}
 }
 
 .homeImage img {
-	width: 600px;
+	// width: 600px;
 	position: relative;
 	z-index: 5;
 }

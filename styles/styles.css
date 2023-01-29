@@ -589,6 +589,7 @@ header {
 }
 .logo img {
   height: 40px;
+  width: auto;
 }
 
 header {
@@ -610,6 +611,9 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -617,14 +621,13 @@ header {
 
 .homeText {
   margin-left: 20px;
-  margin-top: 100px;
+  margin-top: 60px;
 }
 .homeText h1 {
   margin-bottom: 20px;
 }
 
 .homeImage img {
-  width: 600px;
   position: relative;
   z-index: 5;
 }
@@ -921,11 +924,58 @@ header {
   margin: 20px 0px 0px 0px;
 }
 
+.portfolioBtns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.portfolioBtns a {
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+  margin-right: 20px;
+}
+
 .keyword {
   background-color: #FFDBC1;
-  padding: 4px 20px;
+  padding: 4px 15px;
   border-radius: 20px;
   margin-bottom: 0px;
+}
+
+.box1 img {
+  -webkit-transition: -webkit-transform 0.4s ease-in-out;
+  transition: -webkit-transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.box1:hover img {
+  -webkit-transform: rotate3d(0.3, -0.3, 0, 12deg);
+          transform: rotate3d(0.3, -0.3, 0, 12deg);
+  -webkit-transform: skew(1deg, 0.5deg);
+          transform: skew(1deg, 0.5deg);
+}
+
+.box4 img {
+  -webkit-transition: -webkit-transform 0.4s ease-in-out;
+  transition: -webkit-transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.box4:hover img {
+  -webkit-transform: rotate3d(-0.3, -0.3, 0, 12deg);
+          transform: rotate3d(-0.3, -0.3, 0, 12deg);
+  -webkit-transform: skew(1deg, 0.5deg);
+          transform: skew(1deg, 0.5deg);
 }
 
 .testimonials {
