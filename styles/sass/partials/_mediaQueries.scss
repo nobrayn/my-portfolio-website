@@ -1,0 +1,37 @@
+
+// transition to burger menu
+@media only screen and (max-width: 864px) {
+  .navbarLinks {
+    position: fixed;
+    left: -100%;
+    top: 5rem;
+    flex-direction: column;
+    background-color: #fff;
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+  }
+
+  .navbarLinks.active {
+    left: 0;
+  }
+
+  .nav-item {
+    margin: 2.5rem 0;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+}
+// adjust underline size
+.navbarLinks {
+  a:hover::after,
+  a:focus::after {
+  transform: scaleX(.1);
+  transform-origin: center;
+  }
+}
