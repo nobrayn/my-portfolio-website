@@ -113,13 +113,20 @@ textarea {
   flex: 0 0 auto;
   width: 41.66%;
   background-color: $primary;
-  p {
+  p,
+  a {
     color: white;
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 30px;
+    text-decoration: none;
   }
-}
-
-.contactImage img {
-  width: 100%;
+  a {
+    transition: 0.2s;
+    &:hover {
+      color: $secondary;
+    }
+  }
 }
 
 .contactOptions {

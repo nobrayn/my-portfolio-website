@@ -248,7 +248,8 @@ h4,
 h5,
 h6,
 ul,
-li a,
+li,
+a,
 p,
 button,
 label,
@@ -410,53 +411,6 @@ textarea {
   text-transform: uppercase;
 }
 
-.btn {
-  color: #FFFFFF;
-  background-color: #FF651D;
-  font-size: 1.4rem;
-  font-weight: 500;
-  line-height: 21px;
-  letter-spacing: 2px;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  text-align: center;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  padding: 8px 16px;
-  -webkit-box-shadow: 0.5rem 0.5rem #373737;
-          box-shadow: 0.5rem 0.5rem #373737;
-}
-.btn a {
-  font-family: "Jost", sans-serif;
-  color: #FFFFFF;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
-button {
-  text-decoration: none;
-  text-transform: uppercase;
-  border: none;
-  color: #373737;
-  background-color: #fec448;
-  font-size: 1.4rem;
-  font-weight: 500;
-  line-height: 21px;
-  letter-spacing: 2px;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  text-align: center;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  padding: 8px 16px;
-  -webkit-box-shadow: 0.5rem 0.5rem #FF651D;
-          box-shadow: 0.5rem 0.5rem #FF651D;
-}
-
 .fa-brands,
 .fab {
   font-size: 5rem;
@@ -475,6 +429,96 @@ button {
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 4rem;
+}
+
+img {
+  width: 100%;
+}
+
+.btn {
+  display: block;
+  color: #FFFFFF;
+  background-color: #FF651D;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 21px;
+  letter-spacing: 2px;
+  text-align: center;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 8px 16px;
+  -webkit-box-shadow: 5px 5px #373737;
+          box-shadow: 5px 5px #373737;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.btn:hover, .btn:focus {
+  background-color: #fec448;
+  color: #373737;
+  -webkit-transform: translate(-1px, -1px);
+          transform: translate(-1px, -1px);
+  -webkit-box-shadow: 6px 6px #373737;
+          box-shadow: 6px 6px #373737;
+}
+.btn:active {
+  background-color: #9BD3CC;
+  -webkit-transform: translateY(4px);
+          transform: translateY(4px);
+  -webkit-box-shadow: 2px 2px 2px #373737;
+          box-shadow: 2px 2px 2px #373737;
+}
+.btn a {
+  font-family: "Jost", sans-serif;
+  color: #FFFFFF;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+button {
+  text-decoration: none;
+  text-transform: uppercase;
+  border: none;
+  color: #373737;
+  background-color: #fec448;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 21px;
+  letter-spacing: 2px;
+  text-align: center;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 8px 16px;
+  -webkit-box-shadow: 5px 5px #FF651D;
+          box-shadow: 5px 5px #FF651D;
+  cursor: pointer;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+button:hover, button:focus {
+  background-color: #9BD3CC;
+  color: black;
+  -webkit-transform: translate(-1px, -1px);
+          transform: translate(-1px, -1px);
+  -webkit-box-shadow: 6px 6px #FF651D;
+          box-shadow: 6px 6px #FF651D;
+}
+button:active {
+  background-color: #FFDBC1;
+  -webkit-transform: translateY(4px);
+          transform: translateY(4px);
+  -webkit-box-shadow: 2px 2px 2px #FF651D;
+          box-shadow: 2px 2px 2px #FF651D;
 }
 
 header {
@@ -519,7 +563,8 @@ header {
   transition: transform 0.1s ease-out;
   transition: transform 0.1s ease-out, -webkit-transform 0.1s ease-out;
 }
-.navbarLinks a:hover::after {
+.navbarLinks a:hover::after,
+.navbarLinks a:focus::after {
   -webkit-transform: scaleX(0.7);
           transform: scaleX(0.7);
   -webkit-transform-origin: center;
@@ -535,7 +580,7 @@ header {
 .logo p {
   color: #FFF9EC;
   position: absolute;
-  left: 84px;
+  left: 79px;
   top: -12px;
   font-size: 2.31rem;
 }
@@ -584,6 +629,10 @@ header {
   z-index: 5;
 }
 
+.aboutBtn {
+  margin-top: 30px;
+}
+
 .about {
   background-color: #FFFFFF;
   padding: 100px 0px;
@@ -601,6 +650,7 @@ header {
 }
 .aboutImage img {
   margin: auto;
+  width: auto;
   display: block;
 }
 
@@ -640,7 +690,7 @@ header {
 
 .services {
   background-image: url("../assets/images/effect/bg-effect-1.png");
-  padding-bottom: 25px;
+  padding-bottom: 100px;
 }
 .services h2 {
   padding-top: 80px;
@@ -649,7 +699,6 @@ header {
 }
 
 .servicesFlex {
-  max-width: 96%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -727,7 +776,7 @@ header {
   background: white;
 }
 .svcBoxFirebase img {
-  height: 100%;
+  width: 66px;
   padding: 10px;
 }
 
@@ -809,11 +858,13 @@ header {
 }
 
 .portfolio {
+  background-image: url("../assets/images/effect/bg-effect-3.png");
+  background-size: cover;
   background-color: white;
 }
 
 .portfolio {
-  padding-bottom: 25px;
+  padding-bottom: 100px;
 }
 .portfolio h2 {
   padding-top: 80px;
@@ -1108,12 +1159,20 @@ textarea {
   width: 41.66%;
   background-color: #373737;
 }
-.contactRightFlex p {
+.contactRightFlex p,
+.contactRightFlex a {
   color: white;
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 30px;
+  text-decoration: none;
 }
-
-.contactImage img {
-  width: 100%;
+.contactRightFlex a {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.contactRightFlex a:hover {
+  color: #FF651D;
 }
 
 .contactOptions {

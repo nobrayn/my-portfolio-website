@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/x-icon" href="./assets/images/n-logo/favicon.png">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
@@ -16,21 +17,21 @@
 		<nav class="navbar">
 			<div class="container navContainer">
 				<div class="logo">
-					<a href="https://nobrayn.omg.lol/" target="_blank"><img src="./assets/images/n-logo/n-logo-default.png" alt="nobrayn logo image"></a>
+					<a href="https://nobrayn.omg.lol/" target="_blank"><img src="./assets/images/n-logo/n-logo-opt2.png" alt="nobrayn logo image"></a>
 					<a href="https://nobrayn.omg.lol/" target="_blank"><p>o<span>brayn</span></p></a>
 				</div> <!-- end of logo -->
 				<div class="navLinks">
 					<ul class="navbarLinks">
 						<li><a href="#home">home</a></li>
-						<li><a href="#services">services</a></li>
+						<li><a href="#skills">skills</a></li>
 						<li><a href="#portfolio">portfolio</a></li>
 						<li><a href="#testimonials">testimonials</a></li>
 						<li><a href="#contact">contact</a></li>
 					</ul> <!-- end of navbarLinks -->
 				</div> <!-- end of navLinks -->
-				<div class="contactBtn btn">
-					<a href="#contact">contact now</a>
-				</div> <!-- end of contactBtn btn -->
+				
+					<a class="contactBtn btn" href="#contact"><div>contact now</div>
+					</a> <!-- end of contactBtn btn -->
 			</div> <!-- end of container -->
 		</nav> <!-- end of navbar -->
 	</header>
@@ -42,9 +43,8 @@
 						<h6>Hey! 👋, I'm Chris! </h6>
 						<h1>I'm a web developer.</h1>
 						<p>based in Toronto, Canada.</p>
-						<div class="aboutBtn btn">
-							<a href="#about">let's go!</a>
-						</div> <!-- end of contactBtn btn -->
+						<a class="aboutBtn btn" href="#about"><div>Tell me more.</div>
+						</a> <!-- end of contactBtn btn -->
 					</div> <!-- end of homeText -->
 					<div class="homeImage">
 						<img src="./assets/images/home-banner.png" alt="two profile images of Chris O'Bray with colourful borders and backgrounds">
@@ -59,23 +59,24 @@
 					<div class="aboutImage">
 						<img src="http://placekitten.com/375/375" alt="placeholder">
 					</div> <!-- end of aboutImage -->
+
 					<div class="aboutText">
 						<h3>I'm a front-end developer with a sprinkling of experience.</h3>
 						<p>I code fun, functional and memorable websites from the ground up! I'm a proud graduate of Juno College's Web Development bootcamp and have recently kerplammed my way into the market! (woof)</p>
+
 						<div class="aboutBtnFlex">
 							<div class="aboutBtnFlexLeft">
 								<h4>5</h4>
 								<p>The above is a number</p>
-								<div class="contactBtn btn">
-									<a href="#contact">contact me</a>
-								</div> <!-- end of contactBtn btn -->
+								<a class="contactBtn btn" href="#contact"><div>contact me</div>
+								</a> <!-- end of contactBtn btn -->
 							</div> <!-- end of aboutBtnFlexLeft -->
+
 							<div class="aboutBtnFlexRight">
 								<h4>56</h4>
 								<p>The above is also a number</p>
-								<div class="portfolioBtn btn">
-									<a href="#portfolio">portfolio</a>
-								</div> <!-- end of portfolioBtn btn -->
+								<a class="portfolioBtn btn" href="#portfolio"><div>portfolio</div>
+								</a>  <!-- end of portfolioBtn btn -->
 							</div> <!-- end of aboutBtnFlexRight -->
 						</div> <!-- end of aboutBtnFlex -->
 					</div> <!-- end of aboutText -->
@@ -83,9 +84,9 @@
 			</div> <!-- end of container -->
 		</section>
 
-		<section class="services" id="services">
+		<section class="skills" id="skills">
 			<div class="container">
-				<h2>my services</h2>
+				<h2>my skills</h2>
 				<div class="servicesFlex">
 					<div class="svcBox svcBoxOne">
 						<div class="svcBoxLeft">
@@ -155,14 +156,13 @@
 			</div> <!-- end of container -->
 		</section> <!-- end of services -->
 
-
 		<section class="portfolio" id="portfolio">
 			<div class="container">
 				<h2>latest projects</h2>
 				<!-- can repeat this for more projects -->
 				<div class="portfolioRowA">
 					<div class="portfolioImage box1">
-						<img src="./assets/images/project-1.jpg" alt="screenshot of Wits and Clicks site">
+						<a href="https://wits-and-clicks.netlify.app/"><img src="./assets/images/project-1.jpg" alt="screenshot of Wits and Clicks site"></a>
 					</div> <!-- end of portfolioImage box1 -->
 
 					<div class="portfolioText box2">
@@ -174,9 +174,8 @@
 
 							<h3>A Battle of Wits and Clicks</h3>
 							<p>Using two API's, one good and one evil, choose to give advice or insult the other player!</p>
-							<div class="viewProjectBtn btn">
-								<a href="#">view project</a>
-							</div> <!-- end of viewProjectBtn btn -->
+							<a class="viewProjectBtn btn" href="https://wits-and-clicks.netlify.app/" target="blank"><div>view project</div>
+							</a> <!-- end of viewProjectBtn btn -->
 						</div> <!-- end of portfolioTextFlex -->
 					</div> <!-- end of portfolioText box2 -->
 				</div> <!-- end of portfolioRowA-->
@@ -189,14 +188,13 @@
 							</div> <!-- end of keywordBox-->
 							<h3>Another Rad Project</h3>
 							<p>I did some excellent work here. You really should see it!</p>
-							<div class="viewProjectBtn btn">
-								<a href="#">view project</a>
-							</div> <!-- end of viewProjectBtn btn -->
+							<a class="viewProjectBtn btn" href="https://captured-demosite.netlify.app/" target="blank"><div>view project</div>
+							</a> <!-- end of viewProjectBtn btn -->
 						</div> <!-- end of portfolioTextFlex -->
 					</div> <!-- end of portfolioText box3 -->
 
 					<div class="portfolioImage box4">
-						<img src="./assets/images/project-2.png" alt="screenshot of a photography website called captured">
+						<a href="https://captured-demosite.netlify.app/" target="blank"><img src="./assets/images/project-2.jpg" alt="screenshot of a photography website called captured"></a>
 					</div> <!-- end of portfolioImage box4 -->
 				</div> <!-- end of portfolioRowB -->
 			</div> <!-- end of container-->
@@ -209,7 +207,7 @@
 				<div class="testimonialsFlex">
 					<div class="testimonialBox testimonialOne">
 						<div class="testimonialBoxLeft">
-							<a href="https://tiffany.omg.lol/" target="_blank"><img src="./assets/images/testimonial-pics/tiffany-regaudie.jpeg" alt="profile picture of Tiffany Regaudie"></a>
+							<a href="https://tiffany.omg.lol/" target="_blank"><img src="./assets/images/avatar-1.jpg" alt="profile picture of Tiffany Regaudie"></a>
 						</div>
 						<div class="testimonialBoxRight">
 							<p>This guy really knows his stuff. You should see what he can do with all these webbernet languages.</p>
@@ -222,7 +220,7 @@
 
 					<div class="testimonialBox testimonialTwo">
 						<div class="testimonialBoxLeft">
-							<img src="./assets/images/testimonial-pics/horse.png" alt="placeholder">
+							<img src="./assets/images/avatar-2.jpg" alt="placeholder">
 						</div>
 						<div class="testimonialBoxRight">
 							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque excepturi quidem itaque placeat debitis!</p>
@@ -242,16 +240,16 @@
 					<div class="contactLeftFlex">
 						<h5>Get in touch</h5>
 						<p>Write me here, or find me anywhere as <a href="https://nobrayn.omg.lol/" target="_blank">nobrayn!</a></p>
-						<form id="contactForm" onsubmit="return false" action="#" method="post" name="contactForm">
+						<form id="contactForm" class="contactForm" action="https://formspree.io/f/xzbqdedq" method="POST" name="contactForm">
 							<div class="formFlex">
 								<div class="formGroup formName">
 									<label for="firstName">First Name</label>
-									<input type="text" id="firstName" name="firstName" placeholder="Name">
+									<input required type="text" id="firstName" name="firstName" placeholder="Name">
 								</div> <!-- end of formGroup formName -->
 
 								<div class="formGroup formEmail">
 									<label for="contactEmailAddress">Email Address</label>
-									<input type="email" id="contactEmailAddress" name="contactEmailAddress" placeholder="Email">
+									<input required type="email" id="contactEmailAddress" name="contactEmailAddress" placeholder="Email">
 								</div> <!-- end of formGroup formEmail -->
 
 								<div class="formGroup formSubj">
@@ -261,7 +259,7 @@
 
 								<div class="formGroup formMsg">
 									<label for="message">Your message</label>
-									<textarea name="contactMessage" placeholder="Your Message..." id="contactMessage" ></textarea>
+									<textarea required name="contactMessage" placeholder="Your Message..." id="contactMessage" ></textarea>
 								</div> <!-- end of formGroup formMsg -->
 								
 								<div class="formGroup formSend">
@@ -273,7 +271,7 @@
 
 					<div class="contactRightFlex">
 						<div class="contactImage">
-							<img src="http://placekitten.com/450/316" alt="placeholder">
+							<img src="./assets/images/contact.jpg">
 						</div> <!-- end of contactImage -->
 
 						<div class="contactOptions">
@@ -292,7 +290,7 @@
 							</div> <!-- end of contactOptionsLeft -->
 							<div class="contactOptionsRight">
 								<h4>email</h4>
-								<p>nobrayn@gmail.com</p>
+								<a href="mailto:nobrayn@gmail.com? subject=Hey%20man!">nobrayn@gmail.com</a>
 							</div> <!-- end of contactOptionsRight -->
 						</div> <!-- end of contactOptions mail -->
 					</div> <!-- end of contactRightFlex -->

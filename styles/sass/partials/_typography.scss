@@ -12,14 +12,14 @@ h4,
 h5,
 h6,
 ul,
-li
+li,
 a,
 p,
 button,
 label,
 input {
   font-family: $siteFont;
-  color: $primary
+  color: $primary;
 }
 
 h1 {
@@ -34,14 +34,13 @@ h2 {
   line-height: 48px;
   text-transform: uppercase;
   text-align: center;
-
 }
 
 .services h2 {
   font-weight: 600;
   font-size: 5rem;
   line-height: 60px;
-  letter-spacing: 4px
+  letter-spacing: 4px;
 }
 
 h3 {
@@ -54,13 +53,13 @@ h3 {
   font-weight: 600;
   font-size: 2.6rem;
   line-height: 31.2px;
-  color: $secondary
+  color: $secondary;
 }
 
 .boxHeaders h4 {
   font-weight: 600;
   font-size: 2.4rem;
-  line-height: 28.8px
+  line-height: 28.8px;
 }
 
 .servicesFlex h4 {
@@ -85,20 +84,20 @@ h5 {
 .testimonialBoxRight h5 {
   font-weight: 600;
   font-size: 1.6rem;
-  line-height: 19.2px
+  line-height: 19.2px;
 }
 
 .contactLeftFlex h5 {
   font-weight: 600;
   font-size: 3.2rem;
-  line-height: 38.4px
+  line-height: 38.4px;
 }
 
 h6 {
   font-weight: 600;
   font-size: 2rem;
   line-height: 19.2px;
-  letter-spacing: 3px
+  letter-spacing: 3px;
 }
 
 p {
@@ -106,28 +105,28 @@ p {
 }
 
 .homeText p {
-font-weight: 400;
-font-size: 2rem;
-line-height: 30px;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 30px;
 }
 
 .aboutText p {
-font-weight: 400;
-font-size: 1.8rem;
-line-height: 27px
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 27px;
 }
 
 .svcBox p {
-font-weight: 400;
-font-size: 1.7rem;
-line-height: 25.5px;
+  font-weight: 400;
+  font-size: 1.7rem;
+  line-height: 25.5px;
 }
 
 .portfolioText p {
-font-weight: 500;
-font-size: 1.3rem;
-line-height: 24px;
-letter-spacing: 3px;
+  font-weight: 500;
+  font-size: 1.3rem;
+  line-height: 24px;
+  letter-spacing: 3px;
 }
 
 .keyword {
@@ -135,22 +134,22 @@ letter-spacing: 3px;
 }
 
 .testimonialBox p {
-font-weight: 400;
-font-size: 1.7rem;
-line-height: 25.5px
+  font-weight: 400;
+  font-size: 1.7rem;
+  line-height: 25.5px;
 }
 
 .contactFlex p {
-font-weight: 500;
-font-size: 2rem;
-line-height: 30px
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 30px;
 }
 
 footer p {
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 24px;
-  color: $septenary
+  color: $septenary;
 }
 
 ul {
@@ -172,47 +171,8 @@ textarea {
   line-height: 35px;
   letter-spacing: 3px;
   text-decoration: none;
-  text-transform: uppercase
-}
-
-.btn {
-  color: $tertiary;
-  background-color: $secondary;
-  font-size: 1.4rem;
-  font-weight: 500;
-  line-height: 21px;
-  letter-spacing: 2px;
-  height: fit-content;
-  text-align: center;
-  width: fit-content;
-  padding: 8px 16px;
-    box-shadow: 0.5rem 0.5rem $primary;
-  a {
-    font-family: $siteFont;
-    color: $tertiary;
-    text-decoration: none;
-    text-transform: uppercase
-  }
-}
-
-button {
-  text-decoration: none;
   text-transform: uppercase;
-  border: none;
-  color: $primary;
-  background-color: $denary;
-  font-size: 1.4rem;
-  font-weight: 500;
-  line-height: 21px;
-  letter-spacing: 2px;
-  height: fit-content;
-  text-align: center;
-  width: fit-content;
-  padding: 8px 16px;
-  box-shadow: 0.5rem 0.5rem $secondary;
 }
-
-
 
 .fa-brands,
 .fab {

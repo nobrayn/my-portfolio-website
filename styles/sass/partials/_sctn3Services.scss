@@ -2,7 +2,7 @@
 
 .services {
   background-image: url("../assets/images/effect/bg-effect-1.png");
-  padding-bottom: 25px;
+  padding-bottom: 100px;
   h2 {
     padding-top: 80px;
     text-align: center;
@@ -10,9 +10,7 @@
   }
 }
 
-// fix this or something
 .servicesFlex {
-  max-width: 96%;
   display: flex;
   flex-wrap: wrap;
   > div {
@@ -66,7 +64,7 @@
   align-self: center;
   background: white;
   img {
-    height: 100%;
+    width: 66px;
     padding: 10px;
   }
 }

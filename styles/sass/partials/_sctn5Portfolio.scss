@@ -1,11 +1,13 @@
 @use "variables" as *;
 
 .portfolio {
+  background-image: url("../assets/images/effect/bg-effect-3.png");
+	background-size: cover;
   background-color: white;
 }
 
 .portfolio {
-  padding-bottom: 25px;
+  padding-bottom: 100px;
   h2 {
     padding-top: 80px;
     margin-top: 0px;

@@ -30,7 +30,8 @@ header {
   transform-origin: center;
   transition: transform 0.1s ease-out;
   }
-  a:hover::after {
+  a:hover::after,
+  a:focus::after {
   transform: scaleX(.7);
   transform-origin: center;
   }
@@ -42,7 +43,7 @@ header {
   p {
     color: $quaternary;
     position: absolute;
-    left: 84px;
+    left: 79px;
     top: -12px;
     font-size: 2.31rem;
   }
