@@ -1,9 +1,6 @@
 const folioApp = {};
 
 // burger menu
-
-
-
 folioApp.mobileMenu = () => {
   folioApp.hamburger.classList.toggle("active");
   folioApp.navMenu.classList.toggle("active");

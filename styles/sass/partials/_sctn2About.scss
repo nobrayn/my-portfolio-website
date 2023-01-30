@@ -12,8 +12,9 @@
 .aboutImage {
   flex-basis: 50%;
   img {
+    border: 2px solid black;
   margin: auto;
-  width: auto;
+  max-width: 375px;
   display: block;
   }
 }
@@ -26,18 +27,31 @@
   h2 {
     margin-top: 0px;
   }
+  h3 {
+    margin-top: 0px;
+  }
   h4 {
-    margin: 10px 0px;
+    margin: 20px 0px 6px 0px;
   }
   p {
     margin: 0;
   }
   .btn {
-    margin-top: 25px;
+    margin-top: 15px;
   }
 }
 
 .aboutBtnFlex {
   display: flex;
-  justify-content: space-between;
+  .aboutBtnFlexLeft,
+  .aboutBtnFlexRight {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  }
+}
+
+.aboutBtnFlexLeft {
+  margin-right: 50px;
 }

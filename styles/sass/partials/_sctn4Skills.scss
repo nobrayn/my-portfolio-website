@@ -1,27 +1,30 @@
-@use "variables" as *;
+// Old Skills section - may incorporate in future
 
-.skills {
-  padding-bottom: 25px;
-  h2 {
-    padding-top: 80px;
-  }
-}
 
-.skillsFlex {
-  display: flex;
-}
+// @use "variables" as *;
 
-.skillsText {
-  display: flex;
-  max-width: fit-content;
-  flex-wrap: wrap;
-  flex-direction: column;
-}
+// .skills {
+//   padding-bottom: 25px;
+//   h2 {
+//     padding-top: 80px;
+//   }
+// }
 
-.iconBox {
-  border: 2px solid red;
-}
+// .skillsFlex {
+//   display: flex;
+// }
 
-.iconBoxLeft {
-  border: 2px solid black;
-}
+// .skillsText {
+//   display: flex;
+//   max-width: fit-content;
+//   flex-wrap: wrap;
+//   flex-direction: column;
+// }
+
+// .iconBox {
+//   border: 2px solid red;
+// }
+
+// .iconBoxLeft {
+//   border: 2px solid black;
+// }
