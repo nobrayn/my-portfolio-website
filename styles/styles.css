@@ -248,7 +248,8 @@ h4,
 h5,
 h6,
 ul,
-li a,
+li,
+a,
 p,
 button,
 label,
@@ -360,7 +361,7 @@ p {
 
 .portfolioText p {
   font-weight: 500;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   line-height: 24px;
   letter-spacing: 3px;
 }
@@ -410,53 +411,6 @@ textarea {
   text-transform: uppercase;
 }
 
-.btn {
-  color: #FFFFFF;
-  background-color: #FF651D;
-  font-size: 1.4rem;
-  font-weight: 500;
-  line-height: 21px;
-  letter-spacing: 2px;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  text-align: center;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  padding: 8px 16px;
-  -webkit-box-shadow: 0.5rem 0.5rem #373737;
-          box-shadow: 0.5rem 0.5rem #373737;
-}
-.btn a {
-  font-family: "Jost", sans-serif;
-  color: #FFFFFF;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
-button {
-  text-decoration: none;
-  text-transform: uppercase;
-  border: none;
-  color: #373737;
-  background-color: #fec448;
-  font-size: 1.4rem;
-  font-weight: 500;
-  line-height: 21px;
-  letter-spacing: 2px;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  text-align: center;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  padding: 8px 16px;
-  -webkit-box-shadow: 0.5rem 0.5rem #FF651D;
-          box-shadow: 0.5rem 0.5rem #FF651D;
-}
-
 .fa-brands,
 .fab {
   font-size: 5rem;
@@ -475,6 +429,96 @@ button {
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 4rem;
+}
+
+img {
+  width: 100%;
+}
+
+.btn {
+  display: block;
+  color: #FFFFFF;
+  background-color: #FF651D;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 21px;
+  letter-spacing: 2px;
+  text-align: center;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 8px 16px;
+  -webkit-box-shadow: 5px 5px #373737;
+          box-shadow: 5px 5px #373737;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.btn:hover, .btn:focus {
+  background-color: #fec448;
+  color: #373737;
+  -webkit-transform: translate(-1px, -1px);
+          transform: translate(-1px, -1px);
+  -webkit-box-shadow: 6px 6px #373737;
+          box-shadow: 6px 6px #373737;
+}
+.btn:active {
+  background-color: #9BD3CC;
+  -webkit-transform: translateY(4px);
+          transform: translateY(4px);
+  -webkit-box-shadow: 2px 2px 2px #373737;
+          box-shadow: 2px 2px 2px #373737;
+}
+.btn a {
+  font-family: "Jost", sans-serif;
+  color: #FFFFFF;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+button {
+  text-decoration: none;
+  text-transform: uppercase;
+  border: none;
+  color: #373737;
+  background-color: #fec448;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 21px;
+  letter-spacing: 2px;
+  text-align: center;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 8px 16px;
+  -webkit-box-shadow: 5px 5px #FF651D;
+          box-shadow: 5px 5px #FF651D;
+  cursor: pointer;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+button:hover, button:focus {
+  background-color: #9BD3CC;
+  color: black;
+  -webkit-transform: translate(-1px, -1px);
+          transform: translate(-1px, -1px);
+  -webkit-box-shadow: 6px 6px #FF651D;
+          box-shadow: 6px 6px #FF651D;
+}
+button:active {
+  background-color: #FFDBC1;
+  -webkit-transform: translateY(4px);
+          transform: translateY(4px);
+  -webkit-box-shadow: 2px 2px 2px #FF651D;
+          box-shadow: 2px 2px 2px #FF651D;
 }
 
 header {
@@ -519,7 +563,8 @@ header {
   transition: transform 0.1s ease-out;
   transition: transform 0.1s ease-out, -webkit-transform 0.1s ease-out;
 }
-.navbarLinks a:hover::after {
+.navbarLinks a:hover::after,
+.navbarLinks a:focus::after {
   -webkit-transform: scaleX(0.7);
           transform: scaleX(0.7);
   -webkit-transform-origin: center;
@@ -535,7 +580,7 @@ header {
 .logo p {
   color: #FFF9EC;
   position: absolute;
-  left: 84px;
+  left: 79px;
   top: -12px;
   font-size: 2.31rem;
 }
@@ -544,8 +589,87 @@ header {
 }
 .logo img {
   height: 40px;
+  width: auto;
 }
 
+.hamburger {
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #101010;
+}
+
+.logo {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.logo:hover, .logo:focus {
+  -webkit-animation: shake 0.5s;
+          animation: shake 0.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes shake {
+  0% {
+    -webkit-transform: translate(1px, 1px) rotate(0deg);
+            transform: translate(1px, 1px) rotate(0deg);
+  }
+  20% {
+    -webkit-transform: translate(-3px, 0px) rotate(1deg);
+            transform: translate(-3px, 0px) rotate(1deg);
+  }
+  40% {
+    -webkit-transform: translate(1px, -1px) rotate(1deg);
+            transform: translate(1px, -1px) rotate(1deg);
+  }
+  60% {
+    -webkit-transform: translate(-3px, 1px) rotate(0deg);
+            transform: translate(-3px, 1px) rotate(0deg);
+  }
+  80% {
+    -webkit-transform: translate(-1px, -1px) rotate(1deg);
+            transform: translate(-1px, -1px) rotate(1deg);
+  }
+  100% {
+    -webkit-transform: translate(-1px, 0px) rotate(0deg);
+            transform: translate(-1px, 0px) rotate(0deg);
+  }
+}
+
+@keyframes shake {
+  0% {
+    -webkit-transform: translate(1px, 1px) rotate(0deg);
+            transform: translate(1px, 1px) rotate(0deg);
+  }
+  20% {
+    -webkit-transform: translate(-3px, 0px) rotate(1deg);
+            transform: translate(-3px, 0px) rotate(1deg);
+  }
+  40% {
+    -webkit-transform: translate(1px, -1px) rotate(1deg);
+            transform: translate(1px, -1px) rotate(1deg);
+  }
+  60% {
+    -webkit-transform: translate(-3px, 1px) rotate(0deg);
+            transform: translate(-3px, 1px) rotate(0deg);
+  }
+  80% {
+    -webkit-transform: translate(-1px, -1px) rotate(1deg);
+            transform: translate(-1px, -1px) rotate(1deg);
+  }
+  100% {
+    -webkit-transform: translate(-1px, 0px) rotate(0deg);
+            transform: translate(-1px, 0px) rotate(0deg);
+  }
+}
 header {
   background-color: #FFF9EC;
   position: fixed;
@@ -565,6 +689,9 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -572,16 +699,23 @@ header {
 
 .homeText {
   margin-left: 20px;
-  margin-top: 100px;
+  margin-top: 60px;
 }
 .homeText h1 {
   margin-bottom: 20px;
 }
 
+.wave {
+  font-size: 4rem;
+}
+
 .homeImage img {
-  width: 600px;
   position: relative;
   z-index: 5;
+}
+
+.aboutBtn {
+  margin-top: 30px;
 }
 
 .about {
@@ -600,7 +734,9 @@ header {
       flex-basis: 50%;
 }
 .aboutImage img {
+  border: 2px solid black;
   margin: auto;
+  max-width: 375px;
   display: block;
 }
 
@@ -619,37 +755,57 @@ header {
 .aboutText h2 {
   margin-top: 0px;
 }
+.aboutText h3 {
+  margin-top: 0px;
+}
 .aboutText h4 {
-  margin: 10px 0px;
+  margin: 20px 0px 6px 0px;
 }
 .aboutText p {
   margin: 0;
 }
 .aboutText .btn {
-  margin-top: 25px;
+  margin-top: 15px;
 }
 
 .aboutBtnFlex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+}
+.aboutBtnFlex .aboutBtnFlexLeft,
+.aboutBtnFlex .aboutBtnFlexRight {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.services {
-  background-image: url("../assets/images/effect/bg-effect-1.png");
-  padding-bottom: 25px;
+.aboutBtnFlexLeft {
+  margin-right: 50px;
 }
-.services h2 {
+
+.skills {
+  background-image: url("../assets/images/effect/bg-effect-1.png");
+  background-size: cover;
+  padding-bottom: 100px;
+}
+.skills h2 {
   padding-top: 80px;
   text-align: center;
   margin-top: 0px;
 }
 
 .servicesFlex {
-  max-width: 96%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -727,7 +883,7 @@ header {
   background: white;
 }
 .svcBoxFirebase img {
-  height: 100%;
+  width: 66px;
   padding: 10px;
 }
 
@@ -761,7 +917,7 @@ header {
 }
 
 .svcBoxFour {
-  background-color: #92B5FE;
+  background-color: #9BD4D0;
 }
 
 .svcBoxFive {
@@ -772,48 +928,14 @@ header {
   background-color: #CEC5FF;
 }
 
-.skills {
-  padding-bottom: 25px;
-}
-.skills h2 {
-  padding-top: 80px;
-}
-
-.skillsFlex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.skillsText {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  max-width: -webkit-fit-content;
-  max-width: -moz-fit-content;
-  max-width: fit-content;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.iconBox {
-  border: 2px solid red;
-}
-
-.iconBoxLeft {
-  border: 2px solid black;
-}
-
 .portfolio {
+  background-image: url("../assets/images/effect/bg-effect-3.png");
+  background-size: cover;
   background-color: white;
 }
 
 .portfolio {
-  padding-bottom: 25px;
+  padding-bottom: 100px;
 }
 .portfolio h2 {
   padding-top: 80px;
@@ -870,11 +992,58 @@ header {
   margin: 20px 0px 0px 0px;
 }
 
+.portfolioBtns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.portfolioBtns a {
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+  margin-right: 20px;
+}
+
 .keyword {
   background-color: #FFDBC1;
-  padding: 4px 20px;
+  padding: 4px 15px;
   border-radius: 20px;
   margin-bottom: 0px;
+}
+
+.box1 img {
+  -webkit-transition: -webkit-transform 0.4s ease-in-out;
+  transition: -webkit-transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.box1:hover img {
+  -webkit-transform: rotate3d(0.3, -0.3, 0, 12deg);
+          transform: rotate3d(0.3, -0.3, 0, 12deg);
+  -webkit-transform: skew(1deg, 0.5deg);
+          transform: skew(1deg, 0.5deg);
+}
+
+.box4 img {
+  -webkit-transition: -webkit-transform 0.4s ease-in-out;
+  transition: -webkit-transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.box4:hover img {
+  -webkit-transform: rotate3d(-0.3, -0.3, 0, 12deg);
+          transform: rotate3d(-0.3, -0.3, 0, 12deg);
+  -webkit-transform: skew(1deg, 0.5deg);
+          transform: skew(1deg, 0.5deg);
 }
 
 .testimonials {
@@ -1108,12 +1277,20 @@ textarea {
   width: 41.66%;
   background-color: #373737;
 }
-.contactRightFlex p {
+.contactRightFlex p,
+.contactRightFlex a {
   color: white;
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 30px;
+  text-decoration: none;
 }
-
-.contactImage img {
-  width: 100%;
+.contactRightFlex a {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.contactRightFlex a:hover {
+  color: #FF651D;
 }
 
 .contactOptions {
@@ -1172,6 +1349,10 @@ textarea {
   margin-top: 10px;
 }
 
+.contactImage img {
+  border: 2px solid white;
+}
+
 footer {
   background-color: #373737;
   color: rgba(255, 255, 255, 0.7490196078);
@@ -1205,3 +1386,179 @@ footer {
 .footerIcons i:hover {
   color: #FF651D;
 }
+
+/* Portrait tablet and small desktops */
+@media (max-width: 864px) {
+  .navbarLinks {
+    position: fixed;
+    left: -100%;
+    top: 5rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: #FFDBC1;
+    width: 50%;
+    border-radius: 10px;
+    text-align: center;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    -webkit-box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+  }
+  .navbarLinks.active {
+    left: 0;
+  }
+  .nav-item {
+    margin: 2.5rem 0;
+  }
+  .hamburger {
+    margin-top: 10px;
+    display: block;
+    cursor: pointer;
+  }
+  .navbarLinks a:hover::after,
+.navbarLinks a:focus::after {
+    -webkit-transform: scaleX(0.1);
+            transform: scaleX(0.1);
+    -webkit-transform-origin: center;
+            transform-origin: center;
+  }
+  .aboutFlex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .aboutFlex .aboutImage img {
+    max-width: 55%;
+    margin-bottom: 50px;
+  }
+  .aboutFlex .aboutText {
+    max-width: 80%;
+  }
+  .portfolio {
+    background-image: none;
+  }
+  .portfolioRowA {
+    background-image: url("../assets/images/effect/bg-effect-3.png");
+    background-size: cover;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 0px;
+  }
+  .portfolioRowA .box2 {
+    margin-bottom: 50px;
+  }
+  .portfolioRowA .box1,
+.portfolioRowA .box2 {
+    max-width: inherit;
+  }
+  .portfolioRowB {
+    background-image: url("../assets/images/effect/bg-effect-3-flip.png");
+    background-size: cover;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 0px;
+  }
+  .portfolioRowB .box4 {
+    margin-top: 50px;
+  }
+  .portfolioRowB .box3,
+.portfolioRowB .box4 {
+    max-width: inherit;
+  }
+  .portfolioRowB > :nth-child(1) {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .portfolioRowB > :nth-child(2) {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .testimonialsFlex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .testimonialsFlex div {
+    width: auto;
+  }
+}
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+  .home {
+    padding-bottom: 75px;
+  }
+  .homeFlex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .homeFlex .homeImage {
+    max-width: 50%;
+  }
+  .homeFlex .homeText {
+    margin-top: 0px;
+  }
+  .servicesFlex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .servicesFlex .svcBox {
+    max-width: inherit;
+  }
+  .testimonialBox {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .testimonialBox .testimonialBoxRight {
+    margin-left: 0px;
+    margin-top: 12px;
+  }
+  .contactFlex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contactFlex .contactLeftFlex {
+    width: inherit;
+    margin: auto 0;
+  }
+  .contactFlex .contactRightFlex {
+    width: 75%;
+    margin-left: 0px;
+  }
+}
+/* Landscape phones and down */

@@ -11,6 +11,79 @@
   z-index: 1;
 }
 
+// smoothing anchor link behavior and adding padding to the top
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 4rem;
+}
+
+img {
+  width: 100%;
+}
+
+.btn {
+  display: block;
+  color: $tertiary;
+  background-color: $secondary;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 21px;
+  letter-spacing: 2px;
+  text-align: center;
+  height: fit-content;
+  width: fit-content;
+  padding: 8px 16px;
+  box-shadow: 5px 5px $primary;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.2s;
+  &:hover,
+  &:focus  {
+    background-color: $denary;
+    color: $primary;
+    transform: translate(-1px, -1px);
+    box-shadow: 6px 6px $primary;
+  }
+  &:active {
+  background-color: $quinary;
+  transform: translateY(4px);
+  box-shadow: 2px 2px 2px $primary;
+  }
+    a {
+    font-family: $siteFont;
+    color: $tertiary;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+}
+
+button {
+  text-decoration: none;
+  text-transform: uppercase;
+  border: none;
+  color: $primary;
+  background-color: $denary;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 21px;
+  letter-spacing: 2px;
+  text-align: center;
+  height: fit-content;
+  width: fit-content;
+  padding: 8px 16px;
+  box-shadow: 5px 5px $secondary;
+  cursor:pointer;
+  transition: 0.2s;
+  &:hover,
+  &:focus {
+    background-color: $quinary;
+    color: black;
+    transform: translate(-1px, -1px);
+    box-shadow: 6px 6px $secondary;
+  }
+  &:active {
+  background-color: $octonary;
+  transform: translateY(4px);
+  box-shadow: 2px 2px 2px $secondary;
+  }
 }

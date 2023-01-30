@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/x-icon" href="./assets/images/n-logo/favicon.png">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
@@ -16,22 +17,27 @@
 		<nav class="navbar">
 			<div class="container navContainer">
 				<div class="logo">
-					<a href="https://nobrayn.omg.lol/" target="_blank"><img src="./assets/images/n-logo/n-logo-default.png" alt="nobrayn logo image"></a>
+					<a href="https://nobrayn.omg.lol/" target="_blank"><img src="./assets/images/n-logo/n-logo-opt2.png" alt="nobrayn logo image"></a>
 					<a href="https://nobrayn.omg.lol/" target="_blank"><p>o<span>brayn</span></p></a>
 				</div> <!-- end of logo -->
 				<div class="navLinks">
 					<ul class="navbarLinks">
-						<li><a href="#home">home</a></li>
-						<li><a href="#services">services</a></li>
-						<li><a href="#portfolio">portfolio</a></li>
-						<li><a href="#testimonials">testimonials</a></li>
-						<li><a href="#contact">contact</a></li>
+						<li class="nav-item"><a href="#home">home</a></li>
+						<li class="nav-item"><a href="#skills">skills</a></li>
+						<li class="nav-item"><a href="#portfolio">portfolio</a></li>
+						<li class="nav-item"><a href="#testimonials">testimonials</a></li>
+						<li class="nav-item"><a href="#contact">contact</a></li>
 					</ul> <!-- end of navbarLinks -->
+					<div class="hamburger">
+						<span class="bar"></span>
+						<span class="bar"></span>
+						<span class="bar"></span>
+					</div>
 				</div> <!-- end of navLinks -->
-				<div class="contactBtn btn">
-					<a href="#contact">contact now</a>
-				</div> <!-- end of contactBtn btn -->
-			</div> <!-- end of container -->
+				
+					<a class="contactBtn btn" href="#contact"><div>contact now</div>
+					</a> <!-- end of contactBtn btn -->
+			</div> <!-- end of container navContainer -->
 		</nav> <!-- end of navbar -->
 	</header>
 	<main class="wrapper">
@@ -39,12 +45,11 @@
 			<div class="container">
 				<div class="homeFlex">
 					<div class="homeText">
-						<h6>Hey! 👋, I'm Chris! </h6>
-						<h1>I'm a web developer.</h1>
+						<h6>Hey! <span class="wave">👋</span> I'm Chris! </h6>
+						<h1>I'm a web developer</h1>
 						<p>based in Toronto, Canada.</p>
-						<div class="aboutBtn btn">
-							<a href="#about">let's go!</a>
-						</div> <!-- end of contactBtn btn -->
+						<a class="aboutBtn btn" href="#about"><div>Tell me more.</div>
+						</a> <!-- end of contactBtn btn -->
 					</div> <!-- end of homeText -->
 					<div class="homeImage">
 						<img src="./assets/images/home-banner.png" alt="two profile images of Chris O'Bray with colourful borders and backgrounds">
@@ -57,25 +62,26 @@
 			<div class="container">
 				<div class="aboutFlex">
 					<div class="aboutImage">
-						<img src="http://placekitten.com/375/375" alt="placeholder">
+						<img src="./assets/images/aboutme-banner.jpg" alt="chris o'bray looking amazed at the danube river on a sunny day">
 					</div> <!-- end of aboutImage -->
+
 					<div class="aboutText">
-						<h3>I'm a front-end developer with a sprinkling of experience.</h3>
-						<p>I code fun, functional and memorable websites from the ground up! I'm a proud graduate of Juno College's Web Development bootcamp and have recently kerplammed my way into the market! (woof)</p>
+						<h3>I'm a front-end developer with a finely-honed sense of <em>fun</em>.</h3>
+						<p>I create functional and memorable websites and web apps, utilizing an ever-growing array of current technology (see below)! I'm a proud (future) graduate of Juno College's Web Development bootcamp and am actively searching to work for a company whose values align with my own. In short, they are; work hard but don't hustle. Go all-out, but don't burn out. Overall, keep it fun!</p>
+
 						<div class="aboutBtnFlex">
 							<div class="aboutBtnFlexLeft">
-								<h4>5</h4>
-								<p>The above is a number</p>
-								<div class="contactBtn btn">
-									<a href="#contact">contact me</a>
-								</div> <!-- end of contactBtn btn -->
+								<h4>7</h4>
+								<p>days/week I'm availble to talk</p>
+								<a class="contactBtn btn" href="#contact"><div>contact me</div>
+								</a> <!-- end of contactBtn btn -->
 							</div> <!-- end of aboutBtnFlexLeft -->
+
 							<div class="aboutBtnFlexRight">
-								<h4>56</h4>
-								<p>The above is also a number</p>
-								<div class="portfolioBtn btn">
-									<a href="#portfolio">portfolio</a>
-								</div> <!-- end of portfolioBtn btn -->
+								<h4>2</h4>
+								<p>live sites you can view now!</p>
+								<a class="portfolioBtn btn" href="#portfolio"><div>portfolio</div>
+								</a>  <!-- end of portfolioBtn btn -->
 							</div> <!-- end of aboutBtnFlexRight -->
 						</div> <!-- end of aboutBtnFlex -->
 					</div> <!-- end of aboutText -->
@@ -83,9 +89,9 @@
 			</div> <!-- end of container -->
 		</section>
 
-		<section class="services" id="services">
+		<section class="skills" id="skills">
 			<div class="container">
-				<h2>my services</h2>
+				<h2>my skills</h2>
 				<div class="servicesFlex">
 					<div class="svcBox svcBoxOne">
 						<div class="svcBoxLeft">
@@ -93,7 +99,7 @@
 						</div>
 						<div class="svcBoxRight">
 							<h4 class="boxHeaders">HTML</h4>
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus excepturi nam consectetur accusamus dolore corporis est magni libero!</p>
+							<p>Ah, HTML, the building blocks of all things on The Semantic Web. These days it is brimming with accessibility features. And that... is awesome.</p>
 						</div> <!-- end of svcBoxRight -->
 					</div> <!-- end of svcBox svcBoxOne -->
 
@@ -104,7 +110,7 @@
 
 						<div class="svcBoxRight">
 							<h4>CSS</h4>
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, veritatis soluta eius vero nobis aspernatur iure pariatur.</p>
+							<p>Where would we be without CSS? Why, somewhere very plain and ordinary and <em>so</em> 1996.</p>
 						</div> <!-- end of svcBoxRight -->
 					</div> <!-- end of svcBox svcBoxTwo -->
 
@@ -115,7 +121,7 @@
 
 						<div class="svcBoxRight">
 							<h4>JavaScript</h4>
-							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui laboriosam soluta ea blanditiis illo eius quis doloremque voluptas error.</p>
+							<p>If HTML and CSS are works of art at a gallery, then JavaScript is the bouncy ball they give you to bounce off of the pieces. (That doesn't happen does it..)</p>
 						</div> <!-- end of svcBoxRight -->
 					</div> <!-- end of svcBox svcBoxThree -->
 
@@ -126,7 +132,7 @@
 
 						<div class="svcBoxRight">
 							<h4>React JS</h4>
-							<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam quas officia perferendis! Deleniti, porro ad!</p>
+							<p>With some stunning features (ahem, JSX), I can build *fast* single-page/mobile sites with relative ease!</p>
 						</div> <!-- end of svcBoxRight -->
 					</div> <!-- end of svcBox svcBoxFour -->
 
@@ -137,7 +143,7 @@
 
 						<div class="svcBoxRight">
 							<h4>Firebase</h4>
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam provident architecto nemo. Cumque placeat dignissimos iusto vitae!</p>
+							<p>Fire has been essential for mankind's survival for some time. Fire<em>base</em> is an essential tool for realtime database/content hosting and access! </p>
 						</div> <!-- end of svcBoxRight -->
 					</div> <!-- end of svcBox svcBoxFive -->
 
@@ -148,13 +154,12 @@
 
 						<div class="svcBoxRight">
 							<h4>Git</h4>
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, id error. Unde libero exercitationem incidunt expedita!</p>
+							<p>No, Git isn't just a wonderful bit of British Slang. Git is absolutely crucial for maintaining strict version control in my projects.</p>
 						</div> <!-- end of svcBoxRight -->
 					</div> <!-- end of svcBox svcBoxSix -->
 				</div> <!-- end of servicesFlex -->
 			</div> <!-- end of container -->
 		</section> <!-- end of services -->
-
 
 		<section class="portfolio" id="portfolio">
 			<div class="container">
@@ -162,7 +167,8 @@
 				<!-- can repeat this for more projects -->
 				<div class="portfolioRowA">
 					<div class="portfolioImage box1">
-						<img src="./assets/images/project-1.jpg" alt="screenshot of Wits and Clicks site">
+						<a href="https://wits-and-clicks.netlify.app/" target="blank"></a><img src="./assets/images/project-1.jpg" alt="screenshot of Wits and Clicks site">
+						</a>
 					</div> <!-- end of portfolioImage box1 -->
 
 					<div class="portfolioText box2">
@@ -170,13 +176,15 @@
 							<div class="keywordBox">
 								<p class="keyword">vanilla JS</p>
 								<p class="keyword">API</p>
+								<p class="keyword">Error Handling</p>
 							</div> <!-- end of keywordBox-->
 
 							<h3>A Battle of Wits and Clicks</h3>
-							<p>Using two API's, one good and one evil, choose to give advice or insult the other player!</p>
-							<div class="viewProjectBtn btn">
-								<a href="#">view project</a>
-							</div> <!-- end of viewProjectBtn btn -->
+							<p>Using two external APIs, one good and one evil, choose to give advice or insult the other player! What happens when you go <em>too far</em>? Through paired programming, fellow developer Libby Reeves and I built this from the ground up.</p>
+							<div class="portfolioBtns">
+								<a class="viewProjectBtn btn" href="https://wits-and-clicks.netlify.app/" target="blank"><span>view project</span></a>
+								<a class="viewGitBtn btn" href="https://github.com/Chribbyland/project2" target="blank"><span>view git repo</span></a>
+							</div> <!-- end of portfolioBtns -->
 						</div> <!-- end of portfolioTextFlex -->
 					</div> <!-- end of portfolioText box2 -->
 				</div> <!-- end of portfolioRowA-->
@@ -185,18 +193,21 @@
 					<div class="portfolioText box3">
 						<div class="portfolioTextFlex">
 							<div class="keywordBox">
-								<p class="keyword">web design</p>
+								<p class="keyword">HTML/CSS</p>
+								<p class="keyword">responsive</p>
+								<p class="keyword">accessible</p>
 							</div> <!-- end of keywordBox-->
-							<h3>Another Rad Project</h3>
-							<p>I did some excellent work here. You really should see it!</p>
-							<div class="viewProjectBtn btn">
-								<a href="#">view project</a>
-							</div> <!-- end of viewProjectBtn btn -->
+							<h3>"Captured" PSD Conversion</h3>
+							<p>Working with a design doc and supplied assets, I created this accessible, responsive website from scratch! Utilized SASS to keep my CSS as <a href="https://en.wikipedia.org/wiki/Don%27t_repeat_yourself" target="blank">DRY</a> as possible!</p>
+							<div class="portfolioBtns">
+								<a class="viewProjectBtn btn" href="https://captured-demosite.netlify.app/" target="blank"><span>view project</span></a>
+								<a class="viewGitBtn btn" href="https://github.com/nobrayn/chris-obray-captured" target="blank"><span>view git repo</span></a>
+							</div> <!-- end of portfolioBtns-->
 						</div> <!-- end of portfolioTextFlex -->
 					</div> <!-- end of portfolioText box3 -->
 
 					<div class="portfolioImage box4">
-						<img src="./assets/images/project-2.png" alt="screenshot of a photography website called captured">
+						<a href="https://captured-demosite.netlify.app/" target="blank"><img src="./assets/images/project-2.jpg" alt="screenshot of a photography website called captured"></a>
 					</div> <!-- end of portfolioImage box4 -->
 				</div> <!-- end of portfolioRowB -->
 			</div> <!-- end of container-->
@@ -209,20 +220,21 @@
 				<div class="testimonialsFlex">
 					<div class="testimonialBox testimonialOne">
 						<div class="testimonialBoxLeft">
-							<a href="https://tiffany.omg.lol/" target="_blank"><img src="./assets/images/testimonial-pics/tiffany-regaudie.jpeg" alt="profile picture of Tiffany Regaudie"></a>
+							<a href="https://tiffany.omg.lol/" target="_blank"><img src="./assets/images/avatar-1.jpg" alt="profile picture of Tiffany Regaudie"></a>
 						</div>
 						<div class="testimonialBoxRight">
-							<p>This guy really knows his stuff. You should see what he can do with all these webbernet languages.</p>
+							<p>“Chris is a rare find in front-end web development—hes where limitless creativity meets relentless problem solving. And
+							I dare you not to like him, too.”</p>
 							<div>
 								<h5><a href="https://tiffany.omg.lol/"  target="_blank">Tiffany Regaudie</a></h5>
-								<span>Content writer/SEO lady</span>
+								<span>Content Consultant & Copywriter</span>
 							</div>
 						</div> <!-- end of testimonialBoxRight -->
 					</div> <!-- end of testimonialBox testimonialOne -->
 
 					<div class="testimonialBox testimonialTwo">
 						<div class="testimonialBoxLeft">
-							<img src="./assets/images/testimonial-pics/horse.png" alt="placeholder">
+							<img src="./assets/images/avatar-2.jpg" alt="profile picture of Rachel Parry">
 						</div>
 						<div class="testimonialBoxRight">
 							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque excepturi quidem itaque placeat debitis!</p>
@@ -242,16 +254,16 @@
 					<div class="contactLeftFlex">
 						<h5>Get in touch</h5>
 						<p>Write me here, or find me anywhere as <a href="https://nobrayn.omg.lol/" target="_blank">nobrayn!</a></p>
-						<form id="contactForm" onsubmit="return false" action="#" method="post" name="contactForm">
+						<form id="contactForm" class="contactForm" action="https://formspree.io/f/xzbqdedq" method="POST" name="contactForm">
 							<div class="formFlex">
 								<div class="formGroup formName">
 									<label for="firstName">First Name</label>
-									<input type="text" id="firstName" name="firstName" placeholder="Name">
+									<input required type="text" id="firstName" name="firstName" placeholder="Name">
 								</div> <!-- end of formGroup formName -->
 
 								<div class="formGroup formEmail">
 									<label for="contactEmailAddress">Email Address</label>
-									<input type="email" id="contactEmailAddress" name="contactEmailAddress" placeholder="Email">
+									<input required type="email" id="contactEmailAddress" name="contactEmailAddress" placeholder="Email">
 								</div> <!-- end of formGroup formEmail -->
 
 								<div class="formGroup formSubj">
@@ -261,7 +273,7 @@
 
 								<div class="formGroup formMsg">
 									<label for="message">Your message</label>
-									<textarea name="contactMessage" placeholder="Your Message..." id="contactMessage" ></textarea>
+									<textarea required name="contactMessage" placeholder="Your Message..." id="contactMessage" ></textarea>
 								</div> <!-- end of formGroup formMsg -->
 								
 								<div class="formGroup formSend">
@@ -273,7 +285,7 @@
 
 					<div class="contactRightFlex">
 						<div class="contactImage">
-							<img src="http://placekitten.com/450/316" alt="placeholder">
+							<img src="./assets/images/contact.jpg">
 						</div> <!-- end of contactImage -->
 
 						<div class="contactOptions">
@@ -292,7 +304,7 @@
 							</div> <!-- end of contactOptionsLeft -->
 							<div class="contactOptionsRight">
 								<h4>email</h4>
-								<p>nobrayn@gmail.com</p>
+								<a href="mailto:nobrayn@gmail.com? subject=Hey%20man!">nobrayn@gmail.com</a>
 							</div> <!-- end of contactOptionsRight -->
 						</div> <!-- end of contactOptions mail -->
 					</div> <!-- end of contactRightFlex -->
@@ -315,5 +327,6 @@
 			</div> <!-- end of container-->
 		</footer>
 	</main>
+	<script src="./js/script.js"></script>
 </body>
 </html>

@@ -1,0 +1,151 @@
+@use "variables" as *;
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+}
+
+// transition to burger menu and more
+@media (max-width: 864px) {
+  .navbarLinks {
+    position: fixed;
+    left: -100%;
+    top: 5rem;
+    flex-direction: column;
+    background-color: $octonary;
+    width: 50%;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+  }
+
+  .navbarLinks.active {
+    left: 0;
+  }
+  
+  .nav-item {
+    margin: 2.5rem 0;
+  }
+  
+  .hamburger {
+    margin-top: 10px;
+    display: block;
+    cursor: pointer;
+  }
+  
+  // adjust underline size
+  .navbarLinks {
+    a:hover::after,
+    a:focus::after {
+      transform: scaleX(0.1);
+      transform-origin: center;
+    }
+  }
+
+  .aboutFlex {
+    flex-direction: column;
+    align-items: center;
+    .aboutImage img {
+      max-width: 55%;
+      margin-bottom: 50px;
+    }
+    .aboutText {
+      max-width: 80%;
+    }
+  }
+
+  .portfolio {
+    background-image: none;
+  }
+
+  .portfolioRowA {
+    background-image: url("../assets/images/effect/bg-effect-3.png");
+    background-size: cover;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-bottom: 0px;
+    .box2 {
+      margin-bottom: 50px;
+    }
+    .box1,
+    .box2 {
+    max-width: inherit;
+    }
+  }
+
+  .portfolioRowB {
+    background-image: url("../assets/images/effect/bg-effect-3-flip.png");
+    background-size: cover;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-top: 0px;
+    .box4 {
+      margin-top: 50px;
+    }
+    .box3,
+    .box4 {
+    max-width: inherit;
+    }
+    >:nth-child(1) { order: 2; }
+    >:nth-child(2) { order: 1; }
+  }
+
+
+  // adjust testimonials section
+  .testimonialsFlex {
+    flex-direction: column;
+    div {
+      width: auto;
+    }
+  }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+  .home {
+    padding-bottom: 75px;
+  }
+  .homeFlex {
+    flex-direction: column-reverse;
+    .homeImage {
+      max-width: 50%;
+    }
+    .homeText {
+      margin-top: 0px;
+    }
+  }
+
+.servicesFlex {
+flex-direction: column;
+flex-wrap: nowrap;
+.svcBox {
+  max-width: inherit;
+  }
+}
+
+.testimonialBox {
+  flex-direction: column;
+  .testimonialBoxRight {
+    margin-left: 0px;
+    margin-top: 12px;
+  }
+}
+.contactFlex {
+  flex-direction: column-reverse;
+  align-items: center;
+  .contactLeftFlex {
+    width: inherit;
+    margin: auto 0;
+  }
+  .contactRightFlex {
+    width: 75%;
+    margin-left: 0px;
+  }
+}
+
+}
+/* Landscape phones and down */
+@media (max-width: 480px) {
+}

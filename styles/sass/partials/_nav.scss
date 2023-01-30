@@ -30,7 +30,8 @@ header {
   transform-origin: center;
   transition: transform 0.1s ease-out;
   }
-  a:hover::after {
+  a:hover::after,
+  a:focus::after {
   transform: scaleX(.7);
   transform-origin: center;
   }
@@ -42,7 +43,7 @@ header {
   p {
     color: $quaternary;
     position: absolute;
-    left: 84px;
+    left: 79px;
     top: -12px;
     font-size: 2.31rem;
   }
@@ -51,5 +52,38 @@ header {
   }
   img {
     height: 40px;
+    width: auto;
   }
+}
+
+.hamburger {
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  transition: all 0.3s ease-in-out;
+  background-color: #101010;
+}
+
+// fun little animation for the logo
+.logo {
+  transition: 0.4s;
+  &:hover,
+  &:focus {
+  animation: shake 0.5s;
+    animation-iteration-count: infinite;
+  }
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  100% { transform: translate(-1px, 0px) rotate(0deg); }
 }
