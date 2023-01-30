@@ -10,7 +10,6 @@ folioApp.init = () => {
   folioApp.hamburger = document.querySelector(".hamburger");
   folioApp.navMenu = document.querySelector(".navbarLinks");
   folioApp.hamburger.addEventListener("click", folioApp.mobileMenu);
-  folioApp.mobileMenu();
 }
 
 folioApp.init();
