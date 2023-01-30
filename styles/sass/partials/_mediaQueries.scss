@@ -12,7 +12,7 @@
     top: 5rem;
     flex-direction: column;
     background-color: $octonary;
-    width: 50%;
+    width: 60%;
     border-radius: 10px;
     text-align: center;
     transition: 0.3s;
@@ -148,4 +148,16 @@ flex-wrap: nowrap;
 }
 /* Landscape phones and down */
 @media (max-width: 480px) {
+}
+
+.homeFlex .homeImage {
+  max-width: 75%;
+}
+
+.contactOptions {
+  margin: 10px 0px 50px 0px;
+}
+
+.phoneBox{
+  margin-bottom: 0px;
 }
