@@ -968,10 +968,6 @@ header {
   max-width: 50%;
   padding: 10px 4%;
 }
-.portfolioImage img {
-  max-height: 100%;
-  max-width: 100%;
-}
 
 .portfolioTextFlex {
   display: -webkit-box;
@@ -1315,6 +1311,7 @@ textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 10px 0px 50px 0px;
 }
 
 .contactOptionsLeft {
@@ -1361,6 +1358,11 @@ textarea {
           transform: scale(112%);
 }
 
+.mailBox {
+  margin-bottom: 0px;
+  margin-top: 22px;
+}
+
 .contactOptionsRight {
   margin-left: 30px;
   display: -webkit-box;
@@ -1402,6 +1404,7 @@ footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin: 0 20px 0 20px;
 }
 .footerIcons ul {
   display: -webkit-box;
@@ -1422,9 +1425,21 @@ footer {
 .footerIcons i:hover {
   color: #FF651D;
 }
+.footerIcons p {
+  text-align: right;
+}
 
-/* Portrait tablet and small desktops */
-@media (max-width: 864px) {
+/* adjustment to 3 button layout on portfolio section */
+@media (max-width: 1010px) {
+  .portfolioBtns {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .portfolioBtns :nth-child(3) {
+    margin-top: 25px;
+  }
+}
+@media (max-width: 869px) {
   .navbarLinks {
     position: fixed;
     left: -100%;
@@ -1479,6 +1494,9 @@ footer {
   .portfolio {
     background-image: none;
   }
+  .portfolioBtns :nth-child(3) {
+    margin-top: 0px;
+  }
   .portfolioRow {
     margin-bottom: 50px;
   }
@@ -1492,10 +1510,6 @@ footer {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-  }
-  .portfolioRowA .box1,
-  .portfolioRowA .box2 {
-    max-width: inherit;
   }
   .portfolioRowB,
   .portfolioRowLast {
@@ -1550,7 +1564,6 @@ footer {
     max-width: 100%;
   }
   .portfolioImage {
-    max-width: 100%;
     padding: 0 0;
   }
   .portfolioImage img {
@@ -1624,16 +1637,25 @@ footer {
     margin-left: 0px;
   }
 }
+/* adjustment to 3 button layout on portfolio section */
+@media (max-width: 647px) {
+  .portfolioBtns {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .portfolioBtns :nth-child(3) {
+    margin-top: 25px;
+  }
+  .footerIcons p {
+    text-align: right;
+  }
+}
 /* Landscape phones and down */
-.homeFlex .homeImage {
-  max-width: 75%;
-}
-
-.contactOptions {
-  margin: 10px 0px 50px 0px;
-}
-
-.mailBox {
-  margin-bottom: 0px;
-  margin-top: 22px;
+@media (max-width: 480px) {
+  .homeFlex .homeImage {
+    max-width: 75%;
+  }
 }

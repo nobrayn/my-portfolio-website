@@ -3,12 +3,13 @@
 footer {
   background-color: $primary;
   color: $septenary;
-  border-top: 1px solid hsla(0, 0%, 100%, .1);
+  border-top: 1px solid hsla(0, 0%, 100%, 0.1);
 }
 
 .footerIcons {
   display: flex;
   justify-content: space-between;
+  margin: 0 20px 0 20px;
   ul {
     display: flex;
     align-items: center;
@@ -22,5 +23,8 @@ footer {
   }
   i:hover {
     color: $secondary;
+  }
+  p {
+    text-align: right;
   }
 }

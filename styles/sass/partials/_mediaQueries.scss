@@ -1,11 +1,17 @@
 @use "variables" as *;
 
-/* Portrait tablet and small desktops */
-@media (max-width: 940px) {
+/* adjustment to 3 button layout on portfolio section */
+@media (max-width: 1010px) {
+  .portfolioBtns {
+    flex-wrap: wrap;
+    :nth-child(3) {
+      margin-top: 25px;
+    }
+  }
 }
 
 // transition to burger menu and more
-@media (max-width: 864px) {
+@media (max-width: 869px) {
   .navbarLinks {
     position: fixed;
     left: -100%;
@@ -22,17 +28,17 @@
   .navbarLinks.active {
     left: 0;
   }
-  
+
   .nav-item {
     margin: 2.5rem 0;
   }
-  
+
   .hamburger {
     margin-top: 10px;
     display: block;
     cursor: pointer;
   }
-  
+
   // adjust underline size
   .navbarLinks {
     a:hover::after,
@@ -59,18 +65,20 @@
     background-image: none;
   }
 
+  .portfolioBtns {
+    :nth-child(3) {
+      margin-top: 0px;
+    }
+  }
+
   .portfolioRow {
-  margin-bottom: 50px;
+    margin-bottom: 50px;
   }
 
   .portfolioRowA {
     flex-direction: column;
     flex-wrap: nowrap;
     align-items: center;
-    .box1,
-    .box2 {
-    max-width: inherit;
-    }
   }
 
   .portfolioRowB,
@@ -82,10 +90,14 @@
     .box4,
     .box5,
     .box6 {
-    max-width: 100%;
+      max-width: 100%;
     }
-    >:nth-child(1) { order: 2; }
-    >:nth-child(2) { order: 1; }
+    > :nth-child(1) {
+      order: 2;
+    }
+    > :nth-child(2) {
+      order: 1;
+    }
   }
 
   .portfolioRowLast {
@@ -108,14 +120,13 @@
     max-width: 100%;
   }
 
-.portfolioImage {
-  max-width: 100%;
-  padding: 0 0;
-  img {
-    max-height: 100%;
-    max-width: 100%;
+  .portfolioImage {
+    padding: 0 0;
+    img {
+      max-height: 100%;
+      max-width: 100%;
+    }
   }
-}
 
   // adjust testimonials section
   .testimonialsFlex {
@@ -141,49 +152,53 @@
     }
   }
 
-.servicesFlex {
-flex-direction: column;
-flex-wrap: nowrap;
-.svcBox {
-  max-width: inherit;
+  .servicesFlex {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    .svcBox {
+      max-width: inherit;
+    }
+  }
+
+  .testimonialBox {
+    flex-direction: column;
+    .testimonialBoxRight {
+      margin-left: 0px;
+      margin-top: 12px;
+    }
+  }
+  .contactFlex {
+    flex-direction: column-reverse;
+    align-items: center;
+    padding-bottom: 0px;
+    .contactLeftFlex {
+      width: inherit;
+      margin: auto 0;
+    }
+    .contactRightFlex {
+      width: 75%;
+      margin-left: 0px;
+    }
   }
 }
 
-.testimonialBox {
-  flex-direction: column;
-  .testimonialBoxRight {
-    margin-left: 0px;
-    margin-top: 12px;
+/* adjustment to 3 button layout on portfolio section */
+@media (max-width: 647px) {
+  .portfolioBtns {
+    flex-wrap: wrap;
+    justify-content: center;
+    :nth-child(3) {
+      margin-top: 25px;
+    }
   }
-}
-.contactFlex {
-  flex-direction: column-reverse;
-  align-items: center;
-  padding-bottom: 0px;
-  .contactLeftFlex {
-    width: inherit;
-    margin: auto 0;
-  }
-  .contactRightFlex {
-    width: 75%;
-    margin-left: 0px;
+  .footerIcons p {
+text-align: right;
   }
 }
 
-}
 /* Landscape phones and down */
 @media (max-width: 480px) {
-}
-
-.homeFlex .homeImage {
-  max-width: 75%;
-}
-
-.contactOptions {
-  margin: 10px 0px 50px 0px;
-}
-
-.mailBox {
-  margin-bottom: 0px;
-  margin-top: 22px;
+  .homeFlex .homeImage {
+    max-width: 75%;
+  }
 }

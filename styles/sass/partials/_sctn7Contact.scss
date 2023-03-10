@@ -27,7 +27,7 @@
     margin: 0 0 20px;
   }
   button {
-  margin-top: 30px;
+    margin-top: 30px;
   }
   label {
     margin: 10px 0 4px 0;
@@ -52,18 +52,24 @@
       orange,
       red,
       violet
-      );
-      background-size: 800% 800%;
-      background-clip: text;
-      color: transparent;
+    );
+    background-size: 800% 800%;
+    background-clip: text;
+    color: transparent;
     animation: rainbow 8s ease infinite;
   }
 }
 
-@keyframes rainbow { 
-    0%{background-position:0% 50%;}
-    50%{background-position:100% 25%}
-    100%{background-position:0% 50%;}
+@keyframes rainbow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 25%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .formFlex {
@@ -131,7 +137,9 @@ textarea {
 
 .contactOptions {
   display: flex;
+  margin: 10px 0px 50px 0px;  
 }
+
 .contactOptionsLeft {
   display: flex;
   justify-content: center;
@@ -163,6 +171,11 @@ textarea {
   :focus {
     transform: scale(112%);
   }
+}
+
+.mailBox {
+  margin-bottom: 0px;
+  margin-top: 22px;
 }
 
 .contactOptionsRight {
