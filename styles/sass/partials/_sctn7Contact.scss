@@ -13,7 +13,7 @@
   background-color: $tertiary;
   border: 2px solid $tertiary;
   padding: 35px;
-  margin-right: 50px;
+  margin-right: 25px;
   display: flex;
   flex-direction: column;
   width: 50%;
@@ -109,9 +109,9 @@ textarea {
 }
 
 .contactRightFlex {
-  margin-left: 50px;
+  margin-left: 25px;
   flex: 0 0 auto;
-  width: 41.66%;
+  width: 44%;
   background-color: $primary;
   p,
   a {
@@ -147,7 +147,7 @@ textarea {
   }
 }
 
-.phone {
+.linksBlog {
   background: $octonary;
 }
 
@@ -159,13 +159,17 @@ textarea {
   margin-left: 30px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: space-around;
   h4 {
-    margin: 22px 0 0 0;
+    margin: 12px 0 0 0;
   }
   p {
     margin-top: 10px;
   }
+}
+.linksBlogRight {
+  margin-top: 10px;
+  margin-bottom: 15px;
 }
 
 .contactImage img {

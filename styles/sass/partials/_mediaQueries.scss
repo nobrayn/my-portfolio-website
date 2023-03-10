@@ -54,44 +54,68 @@
     }
   }
 
+  // portfolio adjustments
   .portfolio {
     background-image: none;
   }
 
+  .portfolioRow {
+  margin-bottom: 50px;
+  }
+
   .portfolioRowA {
-    background-image: url("../assets/images/effect/bg-effect-3.png");
-    background-size: cover;
     flex-direction: column;
     flex-wrap: nowrap;
     align-items: center;
-    margin-bottom: 0px;
-    .box2 {
-      margin-bottom: 50px;
-    }
     .box1,
     .box2 {
     max-width: inherit;
     }
   }
 
-  .portfolioRowB {
-    background-image: url("../assets/images/effect/bg-effect-3-flip.png");
-    background-size: cover;
+  .portfolioRowB,
+  .portfolioRowLast {
     flex-direction: column;
     flex-wrap: nowrap;
     align-items: center;
-    margin-top: 0px;
-    .box4 {
-      margin-top: 50px;
-    }
     .box3,
-    .box4 {
-    max-width: inherit;
+    .box4,
+    .box5,
+    .box6 {
+    max-width: 100%;
     }
     >:nth-child(1) { order: 2; }
     >:nth-child(2) { order: 1; }
   }
 
+  .portfolioRowLast {
+    margin-top: 20px;
+  }
+
+  .box2,
+  .box3,
+  .box6 {
+    margin-bottom: 50px;
+  }
+
+  .portfolioTextFlex,
+  .keywordBox {
+    align-items: center;
+    text-align: center;
+  }
+
+  .portfolioText {
+    max-width: 100%;
+  }
+
+.portfolioImage {
+  max-width: 100%;
+  padding: 0 0;
+  img {
+    max-height: 100%;
+    max-width: 100%;
+  }
+}
 
   // adjust testimonials section
   .testimonialsFlex {
@@ -135,6 +159,7 @@ flex-wrap: nowrap;
 .contactFlex {
   flex-direction: column-reverse;
   align-items: center;
+  padding-bottom: 0px;
   .contactLeftFlex {
     width: inherit;
     margin: auto 0;
@@ -158,6 +183,7 @@ flex-wrap: nowrap;
   margin: 10px 0px 50px 0px;
 }
 
-.phoneBox{
+.mailBox {
   margin-bottom: 0px;
+  margin-top: 22px;
 }
