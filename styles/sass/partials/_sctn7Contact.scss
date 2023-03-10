@@ -149,10 +149,20 @@ textarea {
 
 .linksBlog {
   background: $octonary;
+  transition: 0.2s;
+  :hover,
+  :focus {
+    transform: scale(112%);
+  }
 }
 
 .mail {
   background: $quinary;
+  transition: 0.2s;
+  :hover,
+  :focus {
+    transform: scale(112%);
+  }
 }
 
 .contactOptionsRight {

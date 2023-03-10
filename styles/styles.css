@@ -1341,10 +1341,24 @@ textarea {
 
 .linksBlog {
   background: #FFDBC1;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.linksBlog :hover,
+.linksBlog :focus {
+  -webkit-transform: scale(112%);
+          transform: scale(112%);
 }
 
 .mail {
   background: #9BD3CC;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.mail :hover,
+.mail :focus {
+  -webkit-transform: scale(112%);
+          transform: scale(112%);
 }
 
 .contactOptionsRight {
