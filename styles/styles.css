@@ -1524,11 +1524,9 @@ footer {
             align-items: center;
   }
   .portfolioRowB .box3,
-  .portfolioRowB .box4,
   .portfolioRowB .box5,
   .portfolioRowB .box6,
   .portfolioRowLast .box3,
-  .portfolioRowLast .box4,
   .portfolioRowLast .box5,
   .portfolioRowLast .box6 {
     max-width: 100%;
