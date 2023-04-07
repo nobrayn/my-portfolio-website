@@ -163,6 +163,7 @@ textarea {
   font-size: 1.6rem;
   line-height: 24px;
   color: $nonary;
+  user-select: none;
 }
 
 .navbarLinks a {

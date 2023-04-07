@@ -14,19 +14,20 @@
 @media (max-width: 869px) {
   .navbarLinks {
     position: fixed;
-    left: -100%;
+    right: -100%;
     top: 5rem;
     flex-direction: column;
     background-color: $octonary;
     width: 60%;
-    border-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
     text-align: center;
     transition: 0.3s;
     box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
   }
 
   .navbarLinks.active {
-    left: 0;
+    right: 0;
   }
 
   .nav-item {
@@ -197,7 +198,31 @@ text-align: right;
 
 /* Landscape phones and down */
 @media (max-width: 480px) {
+  .skills {
+  background-image: url("../assets/images/effect/bg-effect-1-small.png");
+  background-size: contain;
+  }
+  .testimonials {
+  background-image: url("../assets/images/effect/bg-effect-2-small.png");
+  }
   .homeFlex .homeImage {
     max-width: 75%;
+  }
+}
+
+/* Spacing portolio buttons */
+@media (max-width: 390px) {
+  .viewGitBtn {
+    margin-top: 25px;
+  }
+}
+
+/* Last-ditch efforts to keep things nice-nice */
+@media (max-width: 375px) {
+  .contactBtnNav {
+    display: none;
+  }
+  .navLinks {
+    margin-right: 40px;
   }
 }

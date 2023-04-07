@@ -400,6 +400,10 @@ textarea {
   font-size: 1.6rem;
   line-height: 24px;
   color: #555;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .navbarLinks a {
@@ -576,6 +580,7 @@ header {
   display: -ms-flexbox;
   display: flex;
   position: relative;
+  margin-right: 45px;
 }
 .logo p {
   color: #FFF9EC;
@@ -601,9 +606,27 @@ header {
   width: 25px;
   height: 3px;
   margin: 5px auto;
+  background-color: #101010;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  background-color: #101010;
+}
+
+/* Animation for top and bottom bars */
+.hamburger.active .bar:first-child {
+  -webkit-transform: translateY(-4px);
+          transform: translateY(-4px);
+}
+
+.hamburger.active .bar:last-child {
+  -webkit-transform: translateY(4px);
+          transform: translateY(4px);
+}
+
+/* Animation for center bar */
+.hamburger.active .bar:nth-child(2) {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  opacity: 0;
 }
 
 .logo {
@@ -788,6 +811,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-align: center;
 }
 
 .aboutBtnFlexLeft {
@@ -1281,6 +1305,7 @@ textarea {
 
 textarea {
   margin-bottom: 10px;
+  resize: none;
 }
 
 .contactRightFlex {
@@ -1442,7 +1467,7 @@ footer {
 @media (max-width: 869px) {
   .navbarLinks {
     position: fixed;
-    left: -100%;
+    right: -100%;
     top: 5rem;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1450,7 +1475,8 @@ footer {
             flex-direction: column;
     background-color: #FFDBC1;
     width: 60%;
-    border-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
     text-align: center;
     -webkit-transition: 0.3s;
     transition: 0.3s;
@@ -1458,7 +1484,7 @@ footer {
             box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
   }
   .navbarLinks.active {
-    left: 0;
+    right: 0;
   }
   .nav-item {
     margin: 2.5rem 0;
@@ -1653,7 +1679,29 @@ footer {
 }
 /* Landscape phones and down */
 @media (max-width: 480px) {
+  .skills {
+    background-image: url("../assets/images/effect/bg-effect-1-small.png");
+    background-size: contain;
+  }
+  .testimonials {
+    background-image: url("../assets/images/effect/bg-effect-2-small.png");
+  }
   .homeFlex .homeImage {
     max-width: 75%;
+  }
+}
+/* Spacing portolio buttons */
+@media (max-width: 390px) {
+  .viewGitBtn {
+    margin-top: 25px;
+  }
+}
+/* Last-ditch efforts to keep things nice-nice */
+@media (max-width: 375px) {
+  .contactBtnNav {
+    display: none;
+  }
+  .navLinks {
+    margin-right: 40px;
   }
 }
