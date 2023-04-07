@@ -400,10 +400,6 @@ textarea {
   font-size: 1.6rem;
   line-height: 24px;
   color: #555;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
 }
 
 .navbarLinks a {
