@@ -1412,6 +1412,59 @@ textarea {
   border: 2px solid white;
 }
 
+.clients {
+  padding-bottom: 50px;
+}
+.clients h2 {
+  background-color: #373737;
+  color: #FFF9EC;
+  margin-top: 20px;
+  padding: 80px 0px 41.5px 0px;
+}
+
+.logos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.clientLogo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 175px;
+  max-width: 300px;
+  text-align: center; /* Center the content horizontally within the container */
+}
+.clientLogo img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.ISLogo,
+.SMLogo {
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
+}
+
 footer {
   background-color: #373737;
   color: rgba(255, 255, 255, 0.7490196078);

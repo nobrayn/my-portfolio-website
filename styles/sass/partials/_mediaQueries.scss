@@ -192,18 +192,18 @@
     }
   }
   .footerIcons p {
-text-align: right;
+    text-align: right;
   }
 }
 
 /* Landscape phones and down */
 @media (max-width: 480px) {
   .skills {
-  background-image: url("../assets/images/effect/bg-effect-1-small.png");
-  background-size: contain;
+    background-image: url("../assets/images/effect/bg-effect-1-small.png");
+    background-size: contain;
   }
   .testimonials {
-  background-image: url("../assets/images/effect/bg-effect-2-small.png");
+    background-image: url("../assets/images/effect/bg-effect-2-small.png");
   }
   .homeFlex .homeImage {
     max-width: 75%;

@@ -1,0 +1,38 @@
+@use "variables" as *;
+
+.clients {
+  padding-bottom: 50px;
+  h2 {
+    background-color: $primary;
+    color: $quaternary;
+    margin-top: 20px;
+    padding: 80px 0px 41.5px 0px;
+  }
+}
+
+.logos {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.clientLogo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  // flex: 1;
+  height: 175px;
+  max-width: 300px;
+  text-align: center; /* Center the content horizontally within the container */
+  img {
+    max-height: 100%;
+    max-width: 100%;
+  }
+}
+
+.ISLogo,
+.SMLogo {
+  filter: invert(100%);
+}
